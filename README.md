@@ -2,6 +2,8 @@
 
 Design train layouts for standard brick track that mix the track you own with 3D-printed pieces: **Build track → Test drive → Print**. The app prepares labelled plates for your slicer — plain 3MFs that open in any slicer, STLs, and for Bambu printers Bambu Studio projects with painted supports and their G-code; it never starts a printer, and only running your real train proves a layout works.
 
+Live at <https://plateway.alexcarvalho.me>. This repository is the published source: it receives one snapshot per released version, under AGPL-3.0. To send feedback or report a bug, use **Feedback** in the app or on the site; community pieces, trains and furniture go through **Contribute** into [the community library](https://github.com/AlexMC/plateway-library).
+
 ## Run locally
 
 Requires Node.js, Python 3.11–3.13, [uv](https://docs.astral.sh/uv/), and **Bambu Studio at `/Applications/BambuStudio.app`** with X1 Carbon or A1 mini profiles installed. Elsewhere, set `BAMBU_STUDIO_CLI` to the executable (on Linux, the extracted AppImage's `squashfs-root/AppRun`); its bundled `resources/profiles/BBL` supplies the presets. The export service uses its real local CLI to check every plate and slice the Bambu projects; missing executables/profiles and slicer warnings fail the export rather than producing a pretend slice. The plain 3MFs and STLs it writes open in any slicer. Plate previews are drawn by the service itself from the plate meshes.
