@@ -1,0 +1,20 @@
+# Litestream (KTD12): replicates Plateway's SQLite database to the private plateway-backups bucket (R2 hosted, MinIO
+# in local staging). The compose file sets the endpoint and bucket; the token (plateway-backups only) comes from
+# LITESTREAM_ACCESS_KEY_ID and LITESTREAM_SECRET_ACCESS_KEY. Restore: docs/operations.md.
+# Backups are kept 30 days. A snapshot every day (00:00 UTC); right after each, Litestream deletes the snapshots older
+# than the retention and every change file older than the oldest snapshot left. The retention is an hour under 30 days
+# because a snapshot exactly 30 days old can survive that check by milliseconds and stay another day. So the 30-day-old
+# snapshot always goes: deleted data leaves the backups within 30 days (the privacy policy's promise: change both
+# together), and a point-in-time restore reaches back 29 to 30 days, depending on the time of day.
+snapshot:
+  interval: 24h
+  retention: 719h
+dbs:
+  - path: /data/plateway.db
+    replica:
+      type: s3
+      endpoint: ${LITESTREAM_ENDPOINT}
+      bucket: ${LITESTREAM_BUCKET}
+      path: plateway.db
+      region: auto
+      force-path-style: true

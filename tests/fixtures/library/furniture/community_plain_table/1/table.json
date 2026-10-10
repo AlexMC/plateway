@@ -1,0 +1,31 @@
+{
+  "family": "community_plain_table",
+  "label": "Plain table",
+  "width": 1200,
+  "depth": 600,
+  "height": 740,
+  "surfaces": [
+    {
+      "id": "top", "name": "top", "height": 740,
+      "footprint": [{ "x": -600, "y": -300 }, { "x": 600, "y": -300 }, { "x": 600, "y": 300 }, { "x": -600, "y": 300 }],
+      "entries": [
+        { "id": "front", "a": { "x": -600, "y": -300 }, "b": { "x": 600, "y": -300 }, "heading": 1.5707963267948966 },
+        { "id": "back", "a": { "x": -600, "y": 300 }, "b": { "x": 600, "y": 300 }, "heading": -1.5707963267948966 },
+        { "id": "left", "a": { "x": -600, "y": -300 }, "b": { "x": -600, "y": 300 }, "heading": 0 },
+        { "id": "right", "a": { "x": 600, "y": -300 }, "b": { "x": 600, "y": 300 }, "heading": 3.141592653589793 }
+      ]
+    }
+  ],
+  "panels": [
+    { "x": 0, "y": 0, "z": 720, "width": 1200, "depth": 600, "height": 40 },
+    { "x": -570, "y": -270, "z": 350, "width": 50, "depth": 50, "height": 700 },
+    { "x": 570, "y": -270, "z": 350, "width": 50, "depth": 50, "height": 700 },
+    { "x": -570, "y": 270, "z": 350, "width": 50, "depth": 50, "height": 700 },
+    { "x": 570, "y": 270, "z": 350, "width": 50, "depth": 50, "height": 700 }
+  ],
+  "orientations": [0, 1],
+  "colour": 12096624,
+  "plan": { "lines": [], "caption": "Plain table" },
+  "terms": "community_plain_table table desk",
+  "description": "plain table 1200 by 600"
+}

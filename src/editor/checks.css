@@ -1,0 +1,27 @@
+.checks{display:grid;gap:14px}
+.checks-clear{display:flex;align-items:center;gap:10px;margin:0;font-size:12px;font-weight:600}
+.checks-group{display:grid;gap:6px}
+.checks-group h3{display:flex;align-items:center;gap:6px;margin:0;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#8ca19a}
+.checks-group h3 span{min-width:18px;padding:1px 6px;border-radius:9px;background:#22302e;color:#e9eeea;font-family:'DM Sans',sans-serif;letter-spacing:0;text-align:center}
+.checks-row{border:1px solid transparent;border-radius:7px}
+.checks-row.is-selected{border-color:#f0b75a;background:#2a2a1f}
+.checks-locate{display:flex;gap:10px;align-items:flex-start;width:100%;padding:7px 8px;border:0;border-radius:6px;background:none;color:inherit;text-align:left}
+.checks-locate:hover{background:#1b2a2b}
+.checks-row.is-selected .checks-locate:hover{background:none}
+.checks-text{min-width:0}
+.checks-text strong{display:block;font-size:12px;font-weight:600;overflow-wrap:anywhere}
+.checks-text small{display:block;margin-top:3px;color:#8ca19a;font-size:11px;line-height:1.4}
+.checks-icon{display:grid;place-items:center;flex:none;width:18px;height:18px;border-radius:50%;color:#17231e;font-size:12px;font-weight:700}
+.checks-icon.is-error{background:#ec7470}
+.checks-icon.is-warning{background:#e7c786}
+.checks-icon.is-info{background:#8ac8ec}
+.checks-icon.is-okay{background:#c3ee8d}
+.checks-actions{display:flex;flex-wrap:wrap;gap:6px;padding:0 8px 8px 36px}
+.checks-actions .builder-check-action{margin-top:0}
+.checks-fix-note{flex-basis:100%;color:#8ca19a;font-size:11px;line-height:1.4}
+/* Canvas: what the selected check is about. A glow under the track, then a dashed centreline and markers over it. */
+.builder-check-glow{fill:none;stroke:#f0b75a;stroke-opacity:.5;stroke-width:130;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.builder-check-highlight{pointer-events:none}
+.builder-check-highlight path.is-core{fill:none;stroke:#f0b75a;stroke-width:9;stroke-dasharray:28 18;stroke-linecap:round}
+.builder-check-highlight circle{fill:none;stroke:#f0b75a;stroke-width:9}
+.builder-check-highlight circle.is-dot{fill:#f0b75a;stroke:none}

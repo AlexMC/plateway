@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "name": "Oval with a KALLAX station siding",
+  "description": "An oval with a siding that climbs into a station inside a KALLAX cubby.",
+  "furniture": [{ "id": "K1", "kallax": { "x": 1472, "y": 1900, "quarterTurns": 0 } }],
+  "tracks": [
+    { "id": "oval",
+      "start": { "x": 400, "y": 120, "heading": 0 },
+      "steps": [
+        { "straight": 128, "count": 4 },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "straight": 128, "count": 1 },
+        { "turnout": "left", "enter": "out", "as": "S", "set": "straight" },
+        { "straight": 128, "count": 1 },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "close": "oval.start" }
+      ] },
+    { "id": "station",
+      "start": { "kallax": "K1", "cubby": [1, 5], "side": "front" },
+      "steps": [
+        { "straight": 256 },
+        { "buffer": true }
+      ] },
+    { "id": "climb",
+      "start": { "from": "S.branch" },
+      "steps": [
+        { "straight": 128 },
+        { "raise": { "to": 38 } },
+        { "curve": "R40", "turn": "left", "angle": 67.5 },
+        { "close": "station.start" }
+      ] }
+  ]
+}

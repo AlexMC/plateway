@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "name": "KALLAX portal joining an oval",
+  "description": "A track leaves a KALLAX cubby, ramps down to the table and joins an oval.",
+  "furniture": [{ "id": "K1", "kallax": { "x": 1490, "y": 1850, "quarterTurns": 0 } }],
+  "tracks": [
+    { "id": "oval",
+      "start": { "x": 390, "y": 200, "heading": 0 },
+      "steps": [
+        { "straight": 128, "count": 4 },
+        { "turnout": { "family": "turnout_radius", "params": { "radius": 40, "hand": -1, "sprung": 1 } }, "as": "C", "set": "straight" },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "straight": 128, "count": 6 },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "close": "oval.start" }
+      ] },
+    { "id": "portal",
+      "start": { "kallax": "K1", "cubby": [1, 5], "side": "back" },
+      "steps": [
+        { "straight": 128, "count": 3 },
+        { "raise": { "to": 0 } },
+        { "curve": "R40", "turn": "right", "angle": 90 },
+        { "close": "C.branch" }
+      ] }
+  ]
+}

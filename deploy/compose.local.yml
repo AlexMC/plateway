@@ -1,0 +1,65 @@
+# Local staging (docs/operations.md, "Local staging"): the real compose file plus this override, on a laptop.
+# MinIO stands in for R2 with the same three buckets and one user per container; account mail goes to the file sink;
+# there is no tunnel, so `api` is published on loopback only, here and never in compose.yml.
+#   docker compose --env-file deploy/local.env -f deploy/compose.yml -f deploy/compose.local.yml up -d
+# MinIO answers as http://minio.localhost:9900 both inside the network (an alias) and from the laptop's browser
+# (*.localhost is loopback), so presigned links work from both sides.
+services:
+  api:
+    ports: ["127.0.0.1:8890:8765"]
+    environment:
+      PLATEWAY_MAILER: file
+    depends_on:
+      minio-setup: { condition: service_completed_successfully }
+
+  worker:
+    depends_on:
+      minio-setup: { condition: service_completed_successfully }
+
+  litestream:
+    depends_on:
+      minio-setup: { condition: service_completed_successfully }
+
+  cloudflared:
+    profiles: [tunnel]
+
+  minio:
+    image: pgsty/minio:RELEASE.2026-08-04T00-00-00Z
+    command: ["server", "/data", "--address", ":9900"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?}
+      MC_HOST_local: http://localhost:9900
+    ports: ["127.0.0.1:9900:9900"]
+    volumes:
+      - minio:/data
+    networks:
+      plateway:
+        aliases: [minio.localhost]
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+
+  minio-setup:
+    image: pgsty/mc:RELEASE.2026-09-16T00-00-00Z
+    entrypoint: ["/bin/sh", "/minio-setup.sh"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?}
+      API_R2_ACCESS_KEY_ID: ${API_R2_ACCESS_KEY_ID:?}
+      API_R2_SECRET_ACCESS_KEY: ${API_R2_SECRET_ACCESS_KEY:?}
+      WORKER_R2_ACCESS_KEY_ID: ${WORKER_R2_ACCESS_KEY_ID:?}
+      WORKER_R2_SECRET_ACCESS_KEY: ${WORKER_R2_SECRET_ACCESS_KEY:?}
+      LITESTREAM_R2_ACCESS_KEY_ID: ${LITESTREAM_R2_ACCESS_KEY_ID:?}
+      LITESTREAM_R2_SECRET_ACCESS_KEY: ${LITESTREAM_R2_SECRET_ACCESS_KEY:?}
+    volumes:
+      - ./minio-setup.sh:/minio-setup.sh:ro
+    networks: [plateway]
+    depends_on:
+      minio: { condition: service_healthy }
+
+volumes:
+  minio:
+    name: plateway-minio

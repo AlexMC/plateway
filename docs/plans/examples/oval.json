@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "name": "Owned oval",
+  "description": "A starter set’s own track: 8 straights and 16 R40 curves in one loop.",
+  "tracks": [
+    { "id": "main",
+      "start": { "x": 700, "y": 500, "heading": 0 },
+      "steps": [
+        { "straight": 128, "count": 4 },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "straight": 128, "count": 4 },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "close": "main.start" }
+      ] }
+  ]
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Export the landing-page hero model</title>
+<style>
+  body { font: 15px system-ui, sans-serif; background: #151e20; color: #e9eeea; margin: 24px; }
+  #stage { width: 960px; height: 600px; margin-top: 16px; }
+  #stage .drive-view, #stage .drive-canvas { width: 100%; height: 100%; }
+  a { color: #c3ee8d; margin-right: 16px; }
+</style>
+</head>
+<body>
+<h1>Hero model export</h1>
+<p>Pick the project revision JSON (the hero layout as saved by the app) and <code>site/tools/hero-scene.json</code> together.
+  The app's own Test drive scene is built from them and exported as <code>hero-raw.glb</code> plus <code>hero.json</code>.
+  Then run <code>node site/tools/build-hero.mjs hero-raw.glb hero.json</code>.</p>
+<input type="file" id="files" accept=".json,application/json" multiple>
+<p id="status"></p>
+<p id="links"></p>
+<div id="stage"></div>
+<script type="module" src="./export-hero.tsx"></script>
+</body>
+</html>

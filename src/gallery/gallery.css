@@ -1,0 +1,76 @@
+/* The community gallery: the Save/Open dialog language (editor/styles.css) and the start screen's example cards. */
+.saved-dialog.gallery-dialog { width: min(480px, 100%); }
+.saved-dialog.gallery-browser { width: min(1040px, 100%); max-height: min(820px, 92vh); }
+.gallery-intro { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: -12px 0 18px; }
+.gallery-intro p { margin: 0; color: #8ca19a; font-size: 13px; line-height: 1.5; }
+.gallery-intro-actions { flex: none; display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.gallery-loading { color: #8ca19a; font-size: 13px; padding: 12px 24px; }
+.gallery-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+.gallery-card { display: grid; grid-template-rows: 150px auto; height: 100%; border: 1px solid #2b3a38; border-radius: 10px; background: #1a2527; color: #e9eeea; text-decoration: none; overflow: hidden; }
+.gallery-card:hover { border-color: #88ad84; background: #1f2c2e; }
+.gallery-card.is-hidden { border-color: #6b6146; }
+.gallery-card-thumb { width: 100%; height: 150px; background: #132022; }
+.gallery-card-text { display: grid; gap: 3px; align-content: start; min-width: 0; padding: 10px 12px 12px; font-size: 12px; line-height: 1.4; }
+.gallery-card-text strong { font: 700 14px 'Space Grotesk', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gallery-card-meta { color: #8ca19a; }
+.gallery-card-remix { color: #8ac8ec; }
+.gallery-card-description { color: #adbfba; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.gallery-card-badges { display: flex; gap: 6px; margin-top: 3px; }
+.gallery-card-badges em { font-style: normal; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 999px; border: 1px solid #5d7a55; color: #c3ee8d; }
+.gallery-card-badges em.is-warn { border-color: #7b6646; color: #e7c786; }
+.gallery-empty { display: grid; justify-items: center; gap: 8px; padding: 42px 20px; border: 1px dashed #31403f; border-radius: 10px; text-align: center; }
+.gallery-empty h3 { margin: 0; font: 700 17px 'Space Grotesk', sans-serif; }
+.gallery-empty p { margin: 0 0 8px; max-width: 420px; color: #8ca19a; font-size: 13px; line-height: 1.5; }
+.gallery-more { display: flex; justify-content: center; padding-top: 14px; }
+
+.gallery-thumb-shelf { fill: #d7e3d7; fill-opacity: .25; stroke: #e8e9d6; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.gallery-card-thumb polyline, .gallery-page-view polyline { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.gallery-page-view polyline { stroke-width: 5; }
+.gallery-thumb-owned { stroke: #b8e788; }
+.gallery-thumb-printed { stroke: #efb77c; }
+
+.gallery-textarea { width: 100%; resize: vertical; background: #111d1d; color: #e5eee7; border: 1px solid #5c715e; border-radius: 7px; padding: 10px 12px; font: 500 14px 'DM Sans', sans-serif; line-height: 1.45; }
+.gallery-textarea:focus { outline: 2px solid #b8e788; outline-offset: 1px; }
+.gallery-dialog .save-hint a { color: #8ac8ec; text-underline-offset: 3px; }
+.gallery-shared { margin-top: -10px; }
+.gallery-actions-gap { margin-top: 18px; }
+
+/* A layout's read-only page covers the editor; notices (z-index 5) and dialogs (10) stay above it. */
+.gallery-page { position: fixed; inset: 0; z-index: 4; display: flex; flex-direction: column; background: var(--workshop-bg); overflow: auto; }
+.gallery-page-bar { flex: none; }
+.gallery-page-name { color: #e9eeea; font: 700 15px 'Space Grotesk', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 260px; }
+.gallery-page-body { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) 360px; min-height: calc(100vh - 64px); }
+.gallery-page-view { width: 100%; height: 100%; min-height: 420px; background-color: #132022; background-image: linear-gradient(#1d2c2e 1px, transparent 1px), linear-gradient(90deg, #1d2c2e 1px, transparent 1px); background-size: 40px 40px; }
+.gallery-page-info { display: grid; align-content: start; gap: 12px; padding: 22px; border-left: 1px solid #26332f; background: var(--workshop-panel); font-size: 13px; line-height: 1.5; }
+.gallery-page-info h2 { margin: 0; font: 700 22px 'Space Grotesk', sans-serif; overflow-wrap: anywhere; }
+.gallery-page-info p { margin: 0; }
+.gallery-page-info a { color: #8ac8ec; text-underline-offset: 3px; }
+.gallery-page-info .save-hint { margin: 0; }
+.gallery-credit { color: #adbfba; }
+.gallery-credit strong { color: #e9eeea; }
+.gallery-ancestors { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; color: #adbfba; font-size: 12px; }
+.gallery-description { color: #c8d6cc; white-space: pre-line; overflow-wrap: anywhere; }
+.gallery-facts { color: #8ca19a; }
+.gallery-page-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.gallery-danger { color: #ffb4a6; border-color: #6b4038; }
+.gallery-danger:hover { border-color: #b0614f; }
+.gallery-hidden-note { padding: 9px 11px; border: 1px solid #7b6646; border-radius: 8px; background: #2a2419; color: #e7c786; }
+.gallery-moderation { border-top: 1px solid #31403f; padding-top: 12px; display: grid; gap: 8px; justify-items: start; }
+.gallery-moderation h3 { margin: 0; font: 700 14px 'Space Grotesk', sans-serif; color: #e7c786; }
+.gallery-moderation ul { margin: 0; padding-left: 18px; color: #c8d6cc; }
+.gallery-moderation small { color: #8ca19a; }
+.gallery-page-drive { flex: 1; }
+/* Test drive here is a preview of someone else's layout: nothing to edit or print. */
+.gallery-page-drive .drive-side-actions { display: none; }
+.gallery-page-missing { display: grid; justify-items: center; gap: 10px; padding: 60px 20px; color: #c8d6cc; }
+@media (max-width: 900px) {
+  .gallery-page-body { grid-template-columns: minmax(0, 1fr); }
+  .gallery-page-info { border-left: 0; border-top: 1px solid #26332f; }
+  .gallery-intro { flex-direction: column; align-items: flex-start; }
+}
+
+/* Build's start screen entry. */
+.start-community { display: grid; gap: 6px; padding-top: 10px; border-top: 1px solid #2b3a38; }
+.start-community h4 { margin: 0; font: 700 13px 'Space Grotesk', sans-serif; color: #e9eeea; }
+.start-community a { justify-self: start; color: #8ac8ec; font-size: 12px; font-weight: 600; text-underline-offset: 3px; }
+.start-community a:hover { color: #c3ee8d; }

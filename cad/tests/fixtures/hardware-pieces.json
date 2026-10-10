@@ -1,0 +1,2606 @@
+[
+ {
+  "piece": "printed_brick_straight",
+  "variant": "default",
+  "family": "printed_straight",
+  "parameters": {
+   "run": 128
+  }
+ },
+ {
+  "piece": "printed_curve_r40",
+  "variant": "default",
+  "family": "printed_curve",
+  "parameters": {
+   "radius": 320,
+   "sweep": 0.39269908169872414
+  }
+ },
+ {
+  "piece": "printed_flex",
+  "variant": "default",
+  "family": "printed_flex",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bend": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "printed_switch_left",
+  "variant": "default",
+  "family": "printed_switch_left",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bend": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "printed_switch_right",
+  "variant": "default",
+  "family": "printed_switch_right",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bend": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "printed_crossing90",
+  "variant": "default",
+  "family": "printed_crossing90",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bend": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "printed_double_crossover",
+  "variant": "default",
+  "family": "printed_double_crossover",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bend": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "printed_straight",
+  "variant": "default",
+  "family": "printed_straight",
+  "parameters": {
+   "run": 160
+  }
+ },
+ {
+  "piece": "printed_curve_r56",
+  "variant": "default",
+  "family": "printed_curve",
+  "parameters": {
+   "radius": 448,
+   "sweep": 0.39269908169872414
+  }
+ },
+ {
+  "piece": "vertical_transition",
+  "variant": "default",
+  "family": "vertical_transition",
+  "parameters": {
+   "run": 200,
+   "rise": 8
+  }
+ },
+ {
+  "piece": "bridge_deck",
+  "variant": "default",
+  "family": "bridge_deck",
+  "parameters": {
+   "run": 160
+  }
+ },
+ {
+  "piece": "printed_track",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 64,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_straight",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_curve",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 205.920354813851,
+   "s0_k0": 0.0031249999999999993,
+   "s0_k1": 0.0031249999999999993,
+   "s1_len": 205.920354813851,
+   "s1_k0": -0.0031249999999999993,
+   "s1_k1": -0.0031249999999999993,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_sbend",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 3,
+   "s0_len": 81.23339626062725,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "s1_len": 111,
+   "s1_k0": 0,
+   "s1_k1": 0.003363076470723365,
+   "s2_len": 61.267812185447696,
+   "s2_k0": 0.003363076470723365,
+   "s2_k1": 0.003363076470723365,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_easement",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 208,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 4.16,
+   "grade0": 0,
+   "grade1": 0.04,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_ramp",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 351.85837720205683,
+   "s0_k0": 0.002232142857142857,
+   "s0_k1": 0.002232142857142857,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_banked",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 1808,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 64,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 2560,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "track_climb",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "gap_closer",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "buffer_stop",
+  "variant": "default",
+  "family": "buffer_stop",
+  "parameters": {
+   "run": 32
+  }
+ },
+ {
+  "piece": "rerailer",
+  "variant": "default",
+  "family": "rerailer",
+  "parameters": {
+   "run": 128
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "street": 1
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "street": 1,
+   "led": 1
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "street": 1,
+   "led": 2
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "street": 1
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "street": 1
+  }
+ },
+ {
+  "piece": "street_track",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "level_crossing",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "street": 1
+  }
+ },
+ {
+  "piece": "level_crossing",
+  "variant": "default",
+  "family": "road_tile",
+  "parameters": {
+   "run": 128,
+   "angle": 90,
+   "side": 1,
+   "kind": 0,
+   "half": 0
+  }
+ },
+ {
+  "piece": "level_crossing",
+  "variant": "default",
+  "family": "road_tile",
+  "parameters": {
+   "run": 128,
+   "angle": 90,
+   "side": -1,
+   "kind": 0,
+   "half": 0
+  }
+ },
+ {
+  "piece": "turnout_radius",
+  "variant": "default",
+  "family": "turnout_radius",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "radius": 40,
+   "hand": 1,
+   "sprung": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_radius",
+  "variant": "sprung=1",
+  "family": "turnout_radius",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "radius": 40,
+   "hand": 1,
+   "sprung": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_radius",
+  "variant": "servo=1",
+  "family": "turnout_radius",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "radius": 40,
+   "hand": 1,
+   "sprung": 0,
+   "switch_state": 0,
+   "servo": 1
+  }
+ },
+ {
+  "piece": "turnout_curved",
+  "variant": "default",
+  "family": "turnout_curved",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "radius": 40,
+   "sweep": 90,
+   "hand": 1,
+   "sprung": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_curved",
+  "variant": "sprung=1",
+  "family": "turnout_curved",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "radius": 40,
+   "sweep": 90,
+   "hand": 1,
+   "sprung": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_curved",
+  "variant": "servo=1",
+  "family": "turnout_curved",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "radius": 40,
+   "sweep": 90,
+   "hand": 1,
+   "sprung": 0,
+   "switch_state": 0,
+   "servo": 1
+  }
+ },
+ {
+  "piece": "turnout_wye",
+  "variant": "default",
+  "family": "turnout_wye",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "sprung": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_wye",
+  "variant": "sprung=1",
+  "family": "turnout_wye",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "sprung": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_wye",
+  "variant": "servo=1",
+  "family": "turnout_wye",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "sprung": 0,
+   "switch_state": 0,
+   "servo": 1
+  }
+ },
+ {
+  "piece": "turnout_three_way",
+  "variant": "default",
+  "family": "turnout_three_way",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "sprung": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_three_way",
+  "variant": "sprung=1",
+  "family": "turnout_three_way",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "sprung": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turnout_three_way",
+  "variant": "servo=1",
+  "family": "turnout_three_way",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "sprung": 0,
+   "switch_state": 0,
+   "servo": 1
+  }
+ },
+ {
+  "piece": "crossover_single",
+  "variant": "default",
+  "family": "crossover_single",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "spacing": 128,
+   "length": 384,
+   "radius": 320,
+   "angle": 0.6435011087932843,
+   "middle": 4.736951571734002e-14,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "crossover_scissors",
+  "variant": "default",
+  "family": "crossover_scissors",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "spacing": 128,
+   "length": 384,
+   "radius": 320,
+   "angle": 0.6435011087932843,
+   "middle": 4.736951571734002e-14,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "slip_single",
+  "variant": "default",
+  "family": "slip_single",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "angle": 0.7853981633974483,
+   "length": 376,
+   "radius": 453.8721497261419,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "slip_double",
+  "variant": "default",
+  "family": "slip_double",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "angle": 0.7853981633974483,
+   "length": 376,
+   "radius": 453.8721497261419,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "track_diamond",
+  "variant": "default",
+  "family": "track_diamond",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "angle": 45,
+   "length": 160,
+   "cross": 160
+  }
+ },
+ {
+  "piece": "track_diamond_curve",
+  "variant": "default",
+  "family": "track_diamond_curve",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "angle": 45,
+   "length": 208,
+   "radius": 320,
+   "sweep": 45
+  }
+ },
+ {
+  "piece": "track_gauntlet",
+  "variant": "default",
+  "family": "track_gauntlet",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "spacing": 128,
+   "offset": 16,
+   "entry": 320,
+   "length": 128
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "metal=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 1,
+   "metal_base": 5
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "metal=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "metal": 2
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "led=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 1
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "led=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "led": 2
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 113.09733552923255,
+   "s0_k0": 0.001736111111111111,
+   "s0_k1": 0.001736111111111111,
+   "z0": 0,
+   "z1": 4.297698750110837,
+   "grade0": 0.038,
+   "grade1": 0.038,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "helix_curve",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "turntable",
+  "variant": "default",
+  "family": "turntable",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bridge": 256,
+   "index": 22.5,
+   "left": 3,
+   "right": 0,
+   "drive": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turntable",
+  "variant": "drive=1",
+  "family": "turntable",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bridge": 256,
+   "index": 22.5,
+   "left": 3,
+   "right": 0,
+   "drive": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "turntable",
+  "variant": "drive=2",
+  "family": "turntable",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "bridge": 256,
+   "index": 22.5,
+   "left": 3,
+   "right": 0,
+   "drive": 2,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "transfer_table",
+  "variant": "default",
+  "family": "transfer_table",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "deck": 256,
+   "lanes": 3,
+   "hand": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "sector_plate",
+  "variant": "default",
+  "family": "sector_plate",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "deck": 512,
+   "tracks": 3,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "bridge_lift_out",
+  "variant": "default",
+  "family": "bridge_lift_out",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_drop_leaf",
+  "variant": "default",
+  "family": "bridge_drop_leaf",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_bascule",
+  "variant": "default",
+  "family": "bridge_bascule",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "drive": 0,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_bascule",
+  "variant": "drive=1",
+  "family": "bridge_bascule",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "drive": 1,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_bascule",
+  "variant": "drive=2",
+  "family": "bridge_bascule",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "drive": 2,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_swing",
+  "variant": "default",
+  "family": "bridge_swing",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 160,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_lift",
+  "variant": "default",
+  "family": "bridge_lift",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "lift": 128,
+   "drive": 0,
+   "state": 0
+  }
+ },
+ {
+  "piece": "bridge_lift",
+  "variant": "drive=1",
+  "family": "bridge_lift",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "lift": 128,
+   "drive": 1,
+   "state": 0
+  }
+ },
+ {
+  "piece": "train_elevator",
+  "variant": "default",
+  "family": "train_elevator",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "levels": 2,
+   "level_height": 128,
+   "drive": 0,
+   "state": 0
+  }
+ },
+ {
+  "piece": "train_elevator",
+  "variant": "drive=1",
+  "family": "train_elevator",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "levels": 2,
+   "level_height": 128,
+   "drive": 1,
+   "state": 0
+  }
+ },
+ {
+  "piece": "uncoupler_track",
+  "variant": "default",
+  "family": "uncoupler_track",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "drive": 0,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "uncoupler_track",
+  "variant": "drive=1",
+  "family": "uncoupler_track",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "drive": 1,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "narrow_straight",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "gauge": 1
+  }
+ },
+ {
+  "piece": "narrow_curve",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 75.39822368615503,
+   "s0_k0": 0.005208333333333333,
+   "s0_k1": 0.005208333333333333,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "gauge": 1
+  }
+ },
+ {
+  "piece": "narrow_sbend",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 154.44026611038825,
+   "s0_k0": 0.004166666666666666,
+   "s0_k1": 0.004166666666666666,
+   "s1_len": 154.44026611038825,
+   "s1_k0": -0.004166666666666666,
+   "s1_k1": -0.004166666666666666,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "gauge": 1
+  }
+ },
+ {
+  "piece": "dual_straight",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 128,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "gauge": 2
+  }
+ },
+ {
+  "piece": "dual_curve",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 125.66370614359172,
+   "s0_k0": 0.003125,
+   "s0_k1": 0.003125,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "gauge": 2
+  }
+ },
+ {
+  "piece": "narrow_stub_switch",
+  "variant": "default",
+  "family": "narrow_stub_switch",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "deck": 192,
+   "switch_state": 0
+  }
+ },
+ {
+  "piece": "dual_divergence",
+  "variant": "default",
+  "family": "dual_divergence",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "hand": 1
+  }
+ },
+ {
+  "piece": "track_rack",
+  "variant": "default",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 160,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 8,
+   "grade0": 0,
+   "grade1": 0.1,
+   "vcurve": 1280,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "rack": 1,
+   "rack_pitch": 3.2053253876790895,
+   "rack_phase": 1.6026626938395447,
+   "rack_in": 48,
+   "rack_out": 0
+  }
+ },
+ {
+  "piece": "track_rack",
+  "variant": "bracket=1",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 160,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 8,
+   "grade0": 0,
+   "grade1": 0.1,
+   "vcurve": 1280,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "rack": 1,
+   "rack_pitch": 3.2053253876790895,
+   "rack_phase": 1.6026626938395447,
+   "rack_in": 48,
+   "rack_out": 0
+  }
+ },
+ {
+  "piece": "track_rack",
+  "variant": "bracket=1",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 1,
+   "reach": 72,
+   "height": 0
+  }
+ },
+ {
+  "piece": "track_rack",
+  "variant": "bracket=2",
+  "family": "composite_track",
+  "parameters": {
+   "segments": 1,
+   "s0_len": 160,
+   "s0_k0": 0,
+   "s0_k1": 0,
+   "z0": 0,
+   "z1": 8,
+   "grade0": 0,
+   "grade1": 0.1,
+   "vcurve": 1280,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3,
+   "rack": 1,
+   "rack_pitch": 3.2053253876790895,
+   "rack_phase": 1.6026626938395447,
+   "rack_in": 48,
+   "rack_out": 0
+  }
+ },
+ {
+  "piece": "track_rack",
+  "variant": "bracket=2",
+  "family": "track_bracket",
+  "parameters": {
+   "mount": 2,
+   "reach": 72,
+   "height": 16
+  }
+ },
+ {
+  "piece": "flex_tpu_track",
+  "variant": "default",
+  "family": "flex_tpu_track",
+  "parameters": {
+   "segments": 2,
+   "s0_len": 192,
+   "s0_k0": 0.0020833333333333333,
+   "s0_k1": 0.0020833333333333333,
+   "s1_len": 192,
+   "s1_k0": -0.0020833333333333333,
+   "s1_k1": -0.0020833333333333333,
+   "z0": 0,
+   "z1": 0,
+   "grade0": 0,
+   "grade1": 0,
+   "vcurve": 0,
+   "cant0": 0,
+   "cant1": 0,
+   "ends": 3
+  }
+ },
+ {
+  "piece": "funicular",
+  "variant": "default",
+  "family": "funicular",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "length": 512,
+   "grade": 35,
+   "motor": 0,
+   "side": 1
+  }
+ },
+ {
+  "piece": "funicular",
+  "variant": "motor=1",
+  "family": "funicular",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "length": 512,
+   "grade": 35,
+   "motor": 1,
+   "side": 1
+  }
+ },
+ {
+  "piece": "monorail_straight",
+  "variant": "default",
+  "family": "monorail_straight",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "length": 256,
+   "slot_width": 17.5,
+   "slot_depth": 6.4
+  }
+ },
+ {
+  "piece": "monorail_curve",
+  "variant": "default",
+  "family": "monorail_curve",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "angle": 90,
+   "hand": 1,
+   "slot_width": 17.5,
+   "slot_depth": 6.4
+  }
+ },
+ {
+  "piece": "monorail_ramp",
+  "variant": "default",
+  "family": "monorail_ramp",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "part": 0,
+   "climb": 1,
+   "slot_width": 17.5,
+   "slot_depth": 6.4
+  }
+ },
+ {
+  "piece": "monorail_switch",
+  "variant": "default",
+  "family": "monorail_switch",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "hand": 1,
+   "switch_state": 0,
+   "slot_width": 17.5,
+   "slot_depth": 6.4
+  }
+ },
+ {
+  "piece": "rotary_dumper",
+  "variant": "default",
+  "family": "rotary_dumper",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "drive": 0,
+   "state": 0
+  }
+ },
+ {
+  "piece": "rotary_dumper",
+  "variant": "drive=1",
+  "family": "rotary_dumper",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "drive": 1,
+   "state": 0
+  }
+ },
+ {
+  "piece": "rotary_dumper",
+  "variant": "drive=2",
+  "family": "rotary_dumper",
+  "parameters": {
+   "connector_version": 1,
+   "fit_adjustment": 0,
+   "span": 128,
+   "drive": 2,
+   "state": 0
+  }
+ }
+]

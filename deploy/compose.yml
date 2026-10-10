@@ -1,0 +1,142 @@
+# Plateway on its own server (docs/operations.md). Four containers on their own network and volume:
+#   api          FastAPI, the landing site at / and the app at /app/; 1 CPU, 1 GB; publishes NO host port
+#   worker       the prepare queue (KTD5): 2 CPUs at a low share, 7 GB with no swap, 512 pids, first for the OOM killer
+#   litestream   replicates the SQLite database to the plateway-backups bucket
+#   cloudflared  the Cloudflare tunnel, the only way in
+# Secrets come from /opt/plateway/.env (written from 1Password at deploy time, never committed; see .env.example).
+# Each container gets only the R2 token for its own buckets.
+#   docker compose --env-file /opt/plateway/.env -f deploy/compose.yml up -d --build
+name: plateway
+
+x-logging: &logging
+  driver: json-file
+  options: { max-size: 10m, max-file: "3" }
+
+services:
+  api:
+    image: plateway:${PLATEWAY_IMAGE_TAG:?set PLATEWAY_IMAGE_TAG}
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    command: ["python", "-m", "cad.service.app"]
+    init: true
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      PLATEWAY_PUBLIC_ORIGIN: ${PLATEWAY_PUBLIC_ORIGIN:?}
+      # Inside the container network only: no port is published, cloudflared reaches it as http://api:8765.
+      PLATEWAY_BIND_HOST: 0.0.0.0
+      PLATEWAY_S3_ENDPOINT: ${R2_ENDPOINT:?}
+      # plateway-packages (presign, purge) and plateway-library (write). Lifecycle rules are checked at deploy time.
+      PLATEWAY_S3_ACCESS_KEY_ID: ${API_R2_ACCESS_KEY_ID:?}
+      PLATEWAY_S3_SECRET_ACCESS_KEY: ${API_R2_SECRET_ACCESS_KEY:?}
+      PLATEWAY_LIBRARY_URL: ${PLATEWAY_LIBRARY_URL:?}
+      PLATEWAY_MAILER: cloudflare
+      CLOUDFLARE_EMAIL_TOKEN: ${CLOUDFLARE_EMAIL_TOKEN:?}
+      CLOUDFLARE_ACCOUNT_ID: ${CLOUDFLARE_ACCOUNT_ID:?}
+      PLATEWAY_MAIL_FROM: ${PLATEWAY_MAIL_FROM:?}
+      # The library bot (cad/service/github_app.py): the GitHub App installed only on the library repository. Unset
+      # until the App exists (docs/operations.md, "Library repository and GitHub App"): approved uploads then wait.
+      PLATEWAY_GITHUB_APP_ID: ${GITHUB_APP_ID:-}
+      PLATEWAY_GITHUB_APP_PRIVATE_KEY: ${GITHUB_APP_PRIVATE_KEY:-}
+      PLATEWAY_GITHUB_REPO: ${PLATEWAY_GITHUB_REPO:-}
+      # The root filesystem is read-only; font and plot caches go to the tmpfs.
+      XDG_CACHE_HOME: /tmp/cache
+    volumes:
+      - data:/home/plateway/projects
+    expose: ["8765"]
+    cpus: 1
+    mem_limit: 1g
+    memswap_limit: 1g
+    pids_limit: 256
+    networks: [plateway]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8765/', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 30s
+    logging: *logging
+
+  worker:
+    image: plateway:${PLATEWAY_IMAGE_TAG:?set PLATEWAY_IMAGE_TAG}
+    command: ["python", "-m", "cad.service.worker"]
+    restart: unless-stopped
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      PLATEWAY_S3_ENDPOINT: ${R2_ENDPOINT:?}
+      # plateway-packages, read and write; nothing else.
+      PLATEWAY_S3_ACCESS_KEY_ID: ${WORKER_R2_ACCESS_KEY_ID:?}
+      PLATEWAY_S3_SECRET_ACCESS_KEY: ${WORKER_R2_SECRET_ACCESS_KEY:?}
+      # Community pieces are read from the public-read library over its public URL, with no token (storage.py).
+      PLATEWAY_LIBRARY_URL: ${PLATEWAY_LIBRARY_URL:?}
+    volumes:
+      - data:/home/plateway/projects
+    # KTD5 limits: the rest of the machine stays with api, litestream and cloudflared.
+    init: true
+    cpus: 2
+    cpu_shares: 256
+    mem_limit: 7g
+    memswap_limit: 7g
+    pids_limit: 512
+    oom_score_adj: 500
+    networks: [plateway]
+    depends_on:
+      api: { condition: service_healthy }
+    logging: *logging
+
+  litestream:
+    image: litestream/litestream:0.5.17
+    command: ["replicate", "-config", "/etc/litestream.yml"]
+    restart: unless-stopped
+    # The database's owner, so nothing it creates beside the database is root's.
+    user: "10001:10001"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      LITESTREAM_ENDPOINT: ${R2_ENDPOINT:?}
+      LITESTREAM_BUCKET: ${PLATEWAY_BACKUPS_BUCKET:-plateway-backups}
+      # plateway-backups only.
+      LITESTREAM_ACCESS_KEY_ID: ${LITESTREAM_R2_ACCESS_KEY_ID:?}
+      LITESTREAM_SECRET_ACCESS_KEY: ${LITESTREAM_R2_SECRET_ACCESS_KEY:?}
+    volumes:
+      - data:/data
+      - ./litestream.yml:/etc/litestream.yml:ro
+    cpus: 0.25
+    mem_limit: 256m
+    memswap_limit: 256m
+    pids_limit: 64
+    networks: [plateway]
+    depends_on:
+      api: { condition: service_healthy }
+    logging: *logging
+
+  cloudflared:
+    image: cloudflare/cloudflared:2026.10.0
+    command: ["tunnel", "--no-autoupdate", "run"]
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:?}
+    cpus: 0.5
+    mem_limit: 256m
+    memswap_limit: 256m
+    pids_limit: 64
+    networks: [plateway]
+    depends_on:
+      api: { condition: service_healthy }
+    logging: *logging
+
+networks:
+  plateway:
+    name: plateway
+
+volumes:
+  data:
+    name: plateway-data

@@ -1,0 +1,14 @@
+.error-boundary {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: start;
+  gap: 12px;
+  padding: 24px;
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--workshop-bg);
+  color: var(--workshop-text);
+}
+.error-boundary h1 { margin: 0; font-family: 'Space Grotesk', 'DM Sans', sans-serif; font-size: 24px; }
+.error-boundary p { margin: 0; color: var(--workshop-muted); line-height: 1.5; }

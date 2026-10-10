@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "sets": [
+    {
+      "id": "fixture-1",
+      "name": "Fixture shunter",
+      "year": 2014,
+      "theme": "Test",
+      "power": "IR",
+      "gauge": "standard",
+      "source": {
+        "kind": "procedural",
+        "evidence": "hand-made test fixture, not an official set"
+      },
+      "cars": [
+        {
+          "id": "fixture-1/loco",
+          "name": "Shunter",
+          "kind": "loco",
+          "motorised": true,
+          "asset": "trains/fixture-1/loco.glb",
+          "length": 144,
+          "width": 48,
+          "height": 80,
+          "bogies": [
+            50,
+            -50
+          ],
+          "wheelbase": 100,
+          "couplers": {
+            "front": 72,
+            "rear": -72
+          },
+          "outline": [
+            [
+              72,
+              -24
+            ],
+            [
+              72,
+              24
+            ],
+            [
+              -72,
+              24
+            ],
+            [
+              -72,
+              -24
+            ]
+          ],
+          "triangles": 60,
+          "bytes": 5064
+        }
+      ]
+    }
+  ]
+}

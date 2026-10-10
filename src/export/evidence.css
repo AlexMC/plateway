@@ -1,0 +1,7 @@
+.physical-check{display:grid;gap:8px}
+.physical-check-form{display:grid;gap:10px;padding:12px;border:1px solid #354440;border-radius:10px;background:#132022}
+.physical-check-form .export-fit-notes{margin:0}
+.physical-check-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.physical-check-results button{border:1px solid #728676;border-radius:6px;background:#1c292a;color:#e9eeea;font:600 12px 'DM Sans',sans-serif;cursor:pointer;padding:8px 4px}
+.physical-check-results button:first-child{border-color:#c3ee8d;color:#c3ee8d}
+.export-check.worked .export-check-icon{background:#c3ee8d;border-color:#c3ee8d}

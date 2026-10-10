@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- data-app-url: the one place the app's address lives. Every [data-app-link] points there (js/landing.js). -->
+<html lang="en" data-app-url="/app/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community library · Plateway</title>
+<meta name="description" content="Track pieces, trains and furniture made by Plateway members, free under CC BY 4.0 and ready in the app's palette. Browse every item in 3D.">
+<meta name="theme-color" content="#10191b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Plateway">
+<meta property="og:title" content="Plateway community library">
+<meta property="og:description" content="Track pieces, trains and furniture made by Plateway members, free under CC BY 4.0 and ready in the app's palette.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="library.css?v=1">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="./"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></a>
+    <nav aria-label="Sections">
+      <ul class="nav-links">
+        <li><a href="./#how">How it works</a></li>
+        <li><a href="./#features">Features</a></li>
+        <li><a href="./#print">Print</a></li>
+        <li><a href="library.html" aria-current="page">Library</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="./#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-small" href="./#start" data-app-link>Start designing</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="lib-page-head" aria-labelledby="library-title">
+  <div class="wrap">
+    <p class="eyebrow">Community library</p>
+    <h1 id="library-title">Pieces, trains and furniture, made by members</h1>
+    <p class="lede">Every item here is already in the app's palette, free under CC BY 4.0 and credited to its maker. Use it in a layout, print it, remix it.</p>
+    <div class="lib-toolbar">
+      <div class="lib-filters" role="group" aria-label="Show" data-library-filters>
+        <button type="button" class="lib-filter" data-kind="all" aria-pressed="true">All <span data-count="all"></span></button>
+        <button type="button" class="lib-filter" data-kind="piece" aria-pressed="false">Pieces <span data-count="piece"></span></button>
+        <button type="button" class="lib-filter" data-kind="train" aria-pressed="false">Trains <span data-count="train"></span></button>
+        <button type="button" class="lib-filter" data-kind="furniture" aria-pressed="false">Furniture <span data-count="furniture"></span></button>
+      </div>
+      <p class="lib-count" aria-live="polite" data-library-count>Loading the library…</p>
+    </div>
+  </div>
+</section>
+
+<section class="lib-page-items" aria-label="Library items">
+  <div class="wrap">
+    <ul class="lib-grid" data-library-grid></ul>
+    <div class="lib-state" data-library-state hidden>
+      <h2 data-state-title></h2>
+      <p data-state-text></p>
+      <p class="cta-row">
+        <button type="button" class="btn btn-primary" data-library-retry hidden>Try again</button>
+        <a class="btn btn-primary" href="library.html" data-app-link="#contribute" data-library-contribute hidden>Contribute an item</a>
+        <a class="btn btn-ghost" href="https://github.com/AlexMC/plateway-library">Browse it on GitHub</a>
+      </p>
+    </div>
+    <noscript><p class="lib-state">The library needs JavaScript to list its items. <a href="https://github.com/AlexMC/plateway-library">Browse it on GitHub</a> instead.</p></noscript>
+  </div>
+</section>
+
+<section class="section section-alt lib-page-contribute" aria-labelledby="contribute-title">
+  <div class="wrap">
+    <h2 id="contribute-title">Add yours</h2>
+    <p class="section-lede">Sign in, open Contribute in the app and upload an STL for a piece, a GLB for a train car or a short form for furniture. Automatic checks run at once, a person takes a quick look, and once it is merged on GitHub it is in everyone's palette within minutes, credited to your display name.</p>
+    <p class="cta-row"><a class="btn btn-primary" href="./#library" data-app-link="#contribute">Contribute to the library</a><a class="btn btn-ghost" href="./#library">How contributing works</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="wordmark wordmark-small"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></p>
+      <p class="muted">The first railways ran on plateways. This one starts from print plates.</p>
+      <ul class="footer-links">
+        <li><a href="legal/privacy.html">Privacy</a></li>
+        <li><a href="legal/terms.html">Terms</a></li>
+        <li><a href="feedback.html">Send feedback</a></li>
+        <li><a href="https://github.com/AlexMC/plateway">Source code (AGPL-3.0)</a></li>
+      </ul>
+    </div>
+    <div class="footer-notes">
+      <p>Library items are credited on each card and licensed as shown there. Track geometry adapted from a straight rerailer by lev (<a href="https://www.printables.com/model/466240">Printables #466240</a>), <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Fonts: DM Sans and Space Grotesk (SIL Open Font License).</p>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/landing.js?v=2"></script>
+<script type="module" src="js/library-page.js"></script>
+</body>
+</html>

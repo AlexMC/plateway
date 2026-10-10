@@ -1,0 +1,472 @@
+<!doctype html>
+<!-- data-app-url: the one place the app's address lives. Every [data-app-link] points there. -->
+<html lang="en" data-app-url="/app/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plateway · Design train layouts for standard brick track and print the track you don't own</title>
+<meta name="description" content="Design a train layout in your browser with the brick track you already own, test-drive real brick train models in 3D, then print the missing track as labelled plates for any slicer, with an illustrated assembly guide.">
+<meta name="theme-color" content="#10191b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Plateway">
+<meta property="og:title" content="Plateway · Design train layouts for standard brick track and print the track you don't own">
+<meta property="og:description" content="Your track first, printed pieces fill the gaps. Helixes, yards, turntables and bridges; test-drive real brick trains in 3D, then get print plates for any slicer and a PDF assembly guide.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="3D view of a train layout: a main loop of brick track around an engine shed with locomotives on a turntable, and a printed viaduct bridging over the loop, with two trains running.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="library.css?v=1">
+<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="#top"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></a>
+    <nav aria-label="Sections">
+      <ul class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#print">Print</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-small" href="#start" data-app-link>Start designing</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Train layouts for standard brick track · for makers with a 3D printer</p>
+      <h1 id="hero-title">Build with the track you own. Print the rest.</h1>
+      <p class="lede">Design a railway in your browser around the track you already own: helixes, yards, turntables, bridges. Test-drive real brick trains over it in 3D, then download labelled print plates for everything you don't own, with an illustrated assembly guide.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#start" data-app-link>Start designing</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <p class="fineprint">Nothing is sent to your printer: you open the plates in your own slicer and print them yourself.</p>
+    </div>
+    <figure class="hero-shot shot" data-hero-3d>
+      <picture>
+        <source type="image/avif" srcset="img/hero-870.avif 870w, img/hero-1740.avif 1740w" sizes="(min-width: 1180px) 680px, (min-width: 1041px) 58vw, 100vw">
+        <img src="img/hero-1740.webp" srcset="img/hero-870.webp 870w, img/hero-1740.webp 1740w" sizes="(min-width: 1180px) 680px, (min-width: 1041px) 58vw, 100vw" width="1740" height="1000" fetchpriority="high"
+             alt="3D view of a train layout: a main loop of grey brick track around an engine shed and freight yard, with a locomotive in every turntable stall, a transfer table and wagons in the sidings. A printed viaduct line on columns bridges over the main loop twice; the Horizon Express runs the main loop and the Emerald Night steam train crosses the viaduct.">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 id="how-title">How it works</h2>
+    <p class="section-lede">Three steps, one project. Go back and forth as often as you like.</p>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-copy">
+          <p class="step-num"><span>1</span>Build</p>
+          <h3>Lay the track</h3>
+          <p>Place pieces in a top or 3D view; they snap end to end. The track you own goes down first, and printed straights, curves, junctions, climbs and mechanisms fill in around it. Checks list anything that won't work, in plain words.</p>
+        </div>
+        <figure class="shot">
+          <picture>
+            <source type="image/avif" srcset="img/step-build-720.avif 720w, img/step-build-1200.avif 1200w" sizes="(min-width: 960px) 640px, 100vw">
+            <img src="img/step-build-1200.webp" srcset="img/step-build-720.webp 720w, img/step-build-1200.webp 1200w" sizes="(min-width: 960px) 640px, 100vw" width="1200" height="750" loading="lazy"
+                 alt="Build track in 3D: a freight yard off an oval, with five sidings, a transfer table and a turntable with three stalls. The sidebar reads 39 of 52 owned pieces used, 60 to print, no problems found.">
+          </picture>
+        </figure>
+      </li>
+      <li class="step">
+        <div class="step-copy">
+          <p class="step-num"><span>2</span>Test drive</p>
+          <h3>Run a real train over it</h3>
+          <p>Pick from 62 real brick train sets with 126 cars, drawn from their LDraw models, or enter your own cars. Set the points and mechanisms, press play, and see where a route ends and why. It is a preview: only your real train proves the layout.</p>
+        </div>
+        <figure class="shot">
+          <picture>
+            <source type="image/avif" srcset="img/step-drive-720.avif 720w, img/step-drive-1200.avif 1200w" sizes="(min-width: 960px) 640px, 100vw">
+            <img src="img/step-drive-1200.webp" srcset="img/step-drive-720.webp 720w, img/step-drive-1200.webp 1200w" sizes="(min-width: 960px) 640px, 100vw" width="1200" height="750" loading="lazy"
+                 alt="Test drive in 3D on a double-track main line: the Horizon Express leaves a three-track station through printed turnouts. The panel lists two crossovers and four turnouts, with the station turnouts set to diverging.">
+          </picture>
+        </figure>
+      </li>
+      <li class="step">
+        <div class="step-copy">
+          <p class="step-num"><span>3</span>Print</p>
+          <h3>Download plates for your slicer</h3>
+          <p>Choose your printer, prepare plates and download everything at once: plain 3MF plates, STL files, Bambu Studio projects with G-code, and a PDF assembly guide. Every part carries a short code, so you know where it goes.</p>
+        </div>
+        <figure class="shot">
+          <picture>
+            <source type="image/avif" srcset="img/step-print-720.avif 720w, img/step-print-1200.avif 1200w" sizes="(min-width: 960px) 640px, 100vw">
+            <img src="img/step-print-1200.webp" srcset="img/step-print-720.webp 720w, img/step-print-1200.webp 1200w" sizes="(min-width: 960px) 640px, 100vw" width="1200" height="750" loading="lazy"
+                 alt="The Print step for the freight yard: 108 parts on 35 plates for an X1 Carbon, with downloads for all plates, STL files and the assembly guide as PDF or Markdown, and a preview of each plate.">
+          </picture>
+        </figure>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <h2 id="features-title">What's in the box</h2>
+    <p class="section-lede">Every screenshot on this page is a real layout made in the app.</p>
+    <ul class="features">
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-describe-480.avif 480w, img/feat-describe-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-describe-960.webp" srcset="img/feat-describe-480.webp 480w, img/feat-describe-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="The Describe track panel with the request: a figure eight with a 90 degree crossing in the middle, a passing loop on one side so two trains can wait, and a siding with a buffer stop for a small freight yard. Below it, the layout Claude drew, accepted: a figure eight with a passing loop and a siding.">
+        </picture>
+        <h3>Describe it in words</h3>
+        <p>Type “a figure eight with a crossing, a passing loop and a freight siding” and Claude drafts a track plan. The app lays it, checks it, lets Claude repair it, and shows it ghosted on your table to accept, refine or discard.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-checks-480.avif 480w, img/feat-checks-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-checks-960.webp" srcset="img/feat-checks-480.webp 480w, img/feat-checks-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="A Loop doesn't close warning: the loop is 1 curve piece short, the top side is 1 straight shorter than the bottom. The fix button adds one straight and one curve, from your own stock.">
+        </picture>
+        <h3>Checks that explain, and offer a fix</h3>
+        <p>One row per problem: “The loop is 1 curve piece short (22.5°).” Click it to outline the pieces. Where one change fixes it, the row offers it as one undoable edit, tried on a copy first: any new problem it would cause is said before you click.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-junctions-480.avif 480w, img/feat-junctions-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-junctions-960.webp" srcset="img/feat-junctions-480.webp 480w, img/feat-junctions-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="Top view of a double-track main line: two printed crossovers link the tracks, and a station with three platform tracks branches off the outer line through printed turnouts.">
+        </picture>
+        <h3>Printed track and junctions</h3>
+        <p>Straights of any length, curves from R24 to R184, S-bends, easements and flex track. Turnouts with manual, sprung or servo points, crossovers, wyes, three-way turnouts, crossings and gauntlet track. Scenic pieces too: buffer stops, rerailers, street track and level crossings.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-climb-480.avif 480w, img/feat-climb-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-climb-960.webp" srcset="img/feat-climb-480.webp 480w, img/feat-climb-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="A printed helix in the 3D view: two and a half turns of track on support columns, rising from the table to the upper level.">
+        </picture>
+        <h3>Helixes, climbs and bridges</h3>
+        <p>The helix kit stacks turns with room for your tallest car between them. “Go up or down” lays one eased climb to any height. Flyover and wall-run kits, bridge decks, riser blocks and support columns too; the checks measure the clearance under every crossing against your cars.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-shelves-480.avif 480w, img/feat-shelves-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-shelves-960.webp" srcset="img/feat-shelves-480.webp 480w, img/feat-shelves-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="3D view of a room with three cube shelves along the walls. From an oval of brick track in the middle, three printed climbs run up into the bottom compartment of each shelf, and a train waits on the oval.">
+        </picture>
+        <h3>Your room and your furniture</h3>
+        <p>Set the room size and place real shelving with its real heights. Climbs aim straight for a shelf compartment's floor, and the checks catch any track that would run into a panel or out of the room.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-mechanism-480.avif 480w, img/feat-mechanism-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-mechanism-960.webp" srcset="img/feat-mechanism-480.webp 480w, img/feat-mechanism-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="Close-up of the freight yard in 3D: sidings ending in printed buffer stops, a transfer table with three lanes, and a turntable with three stalls.">
+        </picture>
+        <h3>Mechanisms that move</h3>
+        <p>Turntables, transfer tables, sector plates, lift-out, hinged, bascule, swing and lift bridges, a train elevator and an uncoupler. Each says what drives it: by hand, a crank, a Bluetooth or infrared motor, or a servo. Test drive moves them too.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-trains-480.avif 480w, img/feat-trains-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-trains-960.webp" srcset="img/feat-trains-480.webp 480w, img/feat-trains-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="Test drive close-up: the Crocodile Locomotive, three brown cars, takes a printed turnout off the oval and heads up a printed climb.">
+        </picture>
+        <h3>Real brick trains</h3>
+        <p>Search 62 real train sets by number, name or power, from 1960s locomotives to the Horizon Express and the Crocodile, and add a whole set or single cars. The 126 cars ride their bogie pivots and couple face to face through curves.</p>
+      </li>
+      <li class="feature">
+        <picture>
+          <source type="image/avif" srcset="img/feat-shopping-480.avif 480w, img/feat-shopping-960.avif 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw">
+          <img src="img/feat-shopping-960.webp" srcset="img/feat-shopping-480.webp 480w, img/feat-shopping-960.webp 960w" sizes="(min-width: 1180px) 556px, (min-width: 960px) 46vw, 100vw" width="960" height="600" loading="lazy"
+               alt="The shopping list: dowel pins, M3 screws, neodymium magnets, a Bluetooth L motor and cross axles, with Copy list and Download CSV buttons.">
+        </picture>
+        <h3>A shopping list as you build</h3>
+        <p>Every printed piece knows the bought parts it needs: screws, magnets, bearings, brick axles, pins and motors, servo boards. The list adds them up for the whole layout as you build. Copy it or download a CSV.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="your-track" aria-labelledby="your-track-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="your-track-title">Your track first</h2>
+      <p>Tell Setup which track you own. Those pieces are laid first, and printed pieces fill the gaps: the extra turnouts, the odd-length straight, the helix, the turntable.</p>
+      <ul class="ticks">
+        <li>Owning fewer pieces than a layout needs is a warning, never a blocker.</li>
+        <li>The track you own is never swapped for printed pieces unless you choose to.</li>
+        <li>The build summary counts both, so you know exactly what to print.</li>
+      </ul>
+      <p class="muted">In this freight yard the oval and most turnouts are track you own (grey). The yard ladder, uncoupler, transfer table and turntable print (orange).</p>
+    </div>
+    <div class="owned-shots">
+      <figure class="shot">
+        <picture>
+          <source type="image/avif" srcset="img/owned-first-980.avif 980w, img/owned-first-1960.avif 1960w" sizes="(min-width: 1040px) 600px, 100vw">
+          <img src="img/owned-first-1960.webp" srcset="img/owned-first-980.webp 980w, img/owned-first-1960.webp 1960w" sizes="(min-width: 1040px) 600px, 100vw" width="1960" height="1120" loading="lazy"
+               alt="Test drive of the freight yard: the 60052 Cargo Train has pulled into the first siding, past the grey oval of track you own, with the printed sidings and buffer stops beside it.">
+        </picture>
+      </figure>
+      <figure class="shot shot-narrow">
+        <picture>
+          <source type="image/avif" srcset="img/owned-tally-280.avif 280w, img/owned-tally-560.avif 560w" sizes="200px">
+          <img src="img/owned-tally-560.webp" srcset="img/owned-tally-280.webp 280w, img/owned-tally-560.webp 560w" sizes="200px" width="560" height="600" loading="lazy"
+               alt="The This build summary for the double-track main line: 39 of 52 owned pieces used, 59 pieces to print in full detail.">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="print" aria-labelledby="print-title">
+  <div class="wrap">
+    <h2 id="print-title">Print it on your printer, slice it in yours</h2>
+    <div class="split">
+      <div>
+        <ul class="ticks">
+          <li><strong>Pick your printer:</strong> Bambu Lab X1 Carbon or A1 mini. Parts are sized and split for its bed.</li>
+          <li><strong>Plain 3MF plates</strong> that open in OrcaSlicer, PrusaSlicer, Cura or Bambu Studio (turn on supports for the connector ends; the guide shows where).</li>
+          <li><strong>Bambu Studio projects with G-code</strong>, supports painted only where needed, plus every part as an <strong>STL</strong>.</li>
+          <li><strong>Full detail or fast:</strong> fast pieces keep the connector ends and both rails for about half the print time.</li>
+          <li><strong>Connector calibration sample:</strong> print it, test it on your own track, and nudge the fit between −0.15 and +0.15 mm.</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <picture>
+          <source type="image/avif" srcset="img/print-plates-720.avif 720w, img/print-plates-1200.avif 1200w" sizes="(min-width: 960px) 560px, 100vw">
+          <img src="img/print-plates-1200.webp" srcset="img/print-plates-720.webp 720w, img/print-plates-1200.webp 1200w" sizes="(min-width: 960px) 560px, 100vw" width="1200" height="695" loading="lazy"
+               alt="108 parts on 35 plates: Download all, STL files, Assembly guide as PDF or Markdown, notes on each format, and the first two plates with links to their 3MF, Bambu project and G-code.">
+        </picture>
+      </figure>
+    </div>
+    <div class="guide">
+      <div class="guide-pages">
+        <figure class="guide-page">
+          <picture>
+            <source type="image/avif" srcset="img/guide-overview-360.avif 360w, img/guide-overview-720.avif 720w" sizes="(min-width: 700px) 300px, 45vw">
+            <img src="img/guide-overview-720.webp" srcset="img/guide-overview-360.webp 360w, img/guide-overview-720.webp 720w" sizes="(min-width: 700px) 300px, 45vw" width="720" height="1019" loading="lazy"
+                 alt="Page 2 of the freight yard's assembly guide, Layout overview: the layout from above with the track you own in grey, printed pieces in orange, every piece numbered, and a table of printed pieces.">
+          </picture>
+          <figcaption>Layout overview, page 2</figcaption>
+        </figure>
+        <figure class="guide-page">
+          <picture>
+            <source type="image/avif" srcset="img/guide-mechanism-360.avif 360w, img/guide-mechanism-720.avif 720w" sizes="(min-width: 700px) 300px, 45vw">
+            <img src="img/guide-mechanism-720.webp" srcset="img/guide-mechanism-360.webp 360w, img/guide-mechanism-720.webp 720w" sizes="(min-width: 700px) 300px, 45vw" width="720" height="1019" loading="lazy"
+                 alt="Page 49, 41 Transfer table: an exploded drawing of its 11 printed parts labelled 41A to 41K, a table of part, plate and STL file, the hardware (magnets, steel dowel pins, glue, graphite) and numbered steps.">
+          </picture>
+          <figcaption>Transfer table, page 49</figcaption>
+        </figure>
+      </div>
+      <div class="guide-copy">
+        <h3>The PDF guide</h3>
+        <p>The freight yard's guide runs to 60 pages: a cover with printer, style and totals; the layout from above with every piece numbered; the shopping list; one page per plate with its parts, time and filament; and exploded drawings with numbered steps for every turnout and mechanism. The same part codes appear in your slicer's object list and the STL file names.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="library" aria-labelledby="library-title">
+  <div class="wrap">
+    <div class="lib-intro">
+      <div>
+        <h2 id="library-title">The community library</h2>
+        <p class="section-lede">Track pieces, trains and furniture made by Plateway members, free under CC BY 4.0 and already in the app's palette: nothing to download.</p>
+      </div>
+      <div class="lib-intro-side">
+        <p class="lib-live" data-library-live hidden><span class="lib-live-dot" aria-hidden="true"></span><span data-library-count></span></p>
+        <a class="btn btn-primary" href="library.html">Browse the library</a>
+      </div>
+    </div>
+    <ul class="lib-strip" aria-label="Items in the library" data-library-strip hidden></ul>
+
+    <div class="lib-contribute">
+      <h3 class="flow-title">How contributing works</h3>
+      <ol class="flow">
+        <li>
+          <span class="flow-stop" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15V3"/><path d="m7 8 5-5 5 5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></svg></span>
+          <div>
+            <p class="step-num"><span>1</span>Upload</p>
+            <p>In the app's Contribute: an STL piece, a GLB train car or a furniture form.</p>
+          </div>
+        </li>
+        <li>
+          <span class="flow-stop" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div>
+            <p class="step-num"><span>2</span>Automatic checks</p>
+            <p>Printability checks run at once; a failed upload says why.</p>
+          </div>
+        </li>
+        <li>
+          <span class="flow-stop" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <div>
+            <p class="step-num"><span>3</span>Quick look</p>
+            <p>A person looks it over; a rejection always gives the reason.</p>
+          </div>
+        </li>
+        <li>
+          <span class="flow-stop" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></span>
+          <div>
+            <p class="step-num"><span>4</span>Published</p>
+            <p>Merged on <a href="https://github.com/AlexMC/plateway-library">GitHub</a>, it is in everyone's palette within minutes.</p>
+          </div>
+        </li>
+      </ol>
+      <ul class="ticks lib-notes">
+        <li><strong>Credited by name</strong> in the app, on GitHub and in every guide that prints it.</li>
+        <li><strong>Prints as uploaded</strong>, never regenerated.</li>
+        <li><strong>Retired items keep working</strong> in layouts that use them.</li>
+      </ul>
+      <p class="cta-row"><a class="btn btn-primary" href="#library" data-app-link="#contribute">Contribute to the library</a><a class="btn btn-ghost" href="https://github.com/AlexMC/plateway-library">Browse it on GitHub</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section gallery-section" id="gallery" aria-labelledby="gallery-section-title">
+  <div class="wrap">
+    <h2 id="gallery-section-title">The layout gallery</h2>
+    <p class="section-lede">Whole layouts members designed in Plateway and shared for anyone to open, test drive and remix. Browsing needs no account.</p>
+    <div class="gallery-strip-wrap" data-gallery-strip-wrap>
+      <ul class="gallery-strip" aria-label="Newest shared layouts" data-gallery-strip>
+        <li class="gallery-tile is-placeholder" aria-hidden="true"></li>
+        <li class="gallery-tile is-placeholder" aria-hidden="true"></li>
+        <li class="gallery-tile is-placeholder" aria-hidden="true"></li>
+        <li class="gallery-tile is-placeholder" aria-hidden="true"></li>
+        <li class="gallery-tile is-placeholder" aria-hidden="true"></li>
+        <li class="gallery-tile is-placeholder" aria-hidden="true"></li>
+      </ul>
+      <p class="gallery-strip-empty" data-gallery-strip-empty hidden>No layouts shared yet. Publish yours and it is the first one here.</p>
+      <p class="gallery-strip-more"><a href="gallery.html">See every shared layout</a></p>
+    </div>
+    <ul class="gallery-points">
+      <li class="card">
+        <h3>Share yours</h3>
+        <p>Publish from the app's Gallery: it is live at once under CC BY 4.0, credited to your display name. Your owned-track inventory, fit and print settings are never shared.</p>
+      </li>
+      <li class="card">
+        <h3>Browse others</h3>
+        <p>Newest first, open to anyone. Look around a layout in 3D and test drive it without touching your own work.</p>
+      </li>
+      <li class="card">
+        <h3>Remix one</h3>
+        <p>Remix copies a layout into your editor as your own project, with your printer, material and fit, and credits the original by name.</p>
+      </li>
+      <li class="card">
+        <h3>Kept clean</h3>
+        <p>Anyone can report a layout. A person reads every report and hides what doesn't belong; its author is told why.</p>
+      </li>
+    </ul>
+    <p class="cta-row"><a class="btn btn-primary" href="gallery.html">Browse the gallery</a><a class="btn btn-ghost" href="#gallery" data-app-link="#gallery">Publish your layout</a></p>
+  </div>
+</section>
+
+<section class="section section-alt" id="start" aria-labelledby="start-title">
+  <div class="wrap">
+    <h2 id="start-title">Start in your browser</h2>
+    <p class="section-lede">Nothing to install. Open it and start laying track.</p>
+    <ol class="start-steps">
+      <li class="card">
+        <p class="step-num"><span>1</span>Open</p>
+        <h3>Open Plateway</h3>
+        <p>Start from a blank table, pick one of the example layouts, or describe the layout you want in a sentence.</p>
+      </li>
+      <li class="card">
+        <p class="step-num"><span>2</span>Set up</p>
+        <h3>Your room, your track, your train</h3>
+        <p>Enter the room size and place your furniture, say which track you own, pick your trains from the catalogue and choose your printer.</p>
+      </li>
+      <li class="card">
+        <p class="step-num"><span>3</span>Build to print</p>
+        <h3>Build, test drive, print</h3>
+        <p>Lay the track until the checks are clear, run your trains over every route, then download the plates and the assembly guide.</p>
+      </li>
+    </ol>
+    <p class="start-cta"><a class="btn btn-primary" href="#start" data-app-link>Start designing</a></p>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title">FAQ</h2>
+    <details>
+      <summary>Do I need to own any track?</summary>
+      <p>No. Choose <em>None</em> under Your track in Setup and every piece prints. A new project starts with the track from a typical starter set: 8 straights and 16 R40 curves.</p>
+    </details>
+    <details>
+      <summary>Do I need Bambu Studio or a Bambu printer?</summary>
+      <p>No. The plain 3MF plates and STLs open in any slicer: OrcaSlicer, PrusaSlicer, Cura or Bambu Studio. The Bambu Studio projects with G-code are an extra for Bambu printers. Plates are currently sized for a Bambu Lab X1 Carbon or A1 mini bed.</p>
+    </details>
+    <details>
+      <summary>Will printed pieces clip onto my track?</summary>
+      <p>The connector ends are made for standard brick track (L-gauge), but every printer and filament differs. Print the connector calibration sample, test both ends on your own track, and record Too tight, Fits or Too loose. You can reuse the fit adjustment in other projects with the same printer settings.</p>
+    </details>
+    <details>
+      <summary>What hardware do mechanisms need?</summary>
+      <p>Turnouts take M3 screws; tables and bridges take magnets and steel pins; motors, hubs and servos are bought parts. The shopping list names everything for your layout before you print.</p>
+    </details>
+    <details>
+      <summary>Can my metal-rail 9 V train run on printed track?</summary>
+      <p>Not on plain printed track: the rails are plastic, and only pieces fitted with metal rails carry power.</p>
+    </details>
+    <details>
+      <summary>Can I share a piece, train or furniture I made?</summary>
+      <p>Yes. Sign in with a verified email, open Contribute in the app and upload it. After the automatic checks and a quick look it is published to the <a href="#library">community library</a> under CC BY 4.0, credited to your display name, and stays public on GitHub.</p>
+    </details>
+    <details>
+      <summary>Do community pieces use my fit adjustment and print style?</summary>
+      <p>No. A community piece prints exactly as its contributor uploaded it, so the fit adjustment and the full-detail or fast style don't apply to it. The receipt says so. If a piece is later retired, layouts that use it still open and print it.</p>
+    </details>
+    <details>
+      <summary>Can I share a layout I designed?</summary>
+      <p>Yes. Sign in with a verified email, open Gallery in the app and choose Publish your layout. It is public at once in the <a href="gallery.html">gallery</a> under CC BY 4.0, credited to your display name. The track, shelves, room size and train are shared; your owned-track inventory, test-drive notes, connector fit, printer and print settings are not. You can unpublish it at any time, and remixes of it keep their credit.</p>
+    </details>
+    <details>
+      <summary>What happens when I remix someone's layout?</summary>
+      <p>It opens in your editor as a new project of your own, with your printer, material, print settings and connector fit rather than the author's. It credits the layout you remixed, and the layouts that one remixed, by name. From there you change, save and print it like any other project.</p>
+    </details>
+    <details>
+      <summary>Is Plateway affiliated with a toy company?</summary>
+      <p>No. It's an independent project; see the <a href="legal/terms.html">Terms</a>.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="wordmark wordmark-small"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></p>
+      <p class="muted">The first railways ran on plateways. This one starts from print plates.</p>
+      <ul class="footer-links">
+        <li><a href="legal/privacy.html">Privacy</a></li>
+        <li><a href="legal/terms.html">Terms</a></li>
+        <li><a href="feedback.html">Send feedback</a></li>
+        <li><a href="https://github.com/AlexMC/plateway">Source code (AGPL-3.0)</a></li>
+      </ul>
+    </div>
+    <div class="footer-notes">
+      <p>Track geometry adapted from a straight rerailer by lev (<a href="https://www.printables.com/model/466240">Printables #466240</a>), <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Train models are converted from the <a href="https://library.ldraw.org/omr">LDraw Official Model Repository</a> (CC BY 2.0). App icons adapted from <a href="https://lucide.dev">Lucide</a> (ISC). Fonts: DM Sans and Space Grotesk (SIL Open Font License).</p>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/landing.js?v=2"></script>
+<script type="module" src="js/library-strip.js"></script>
+<script type="module" src="js/gallery-strip.js"></script>
+</body>
+</html>

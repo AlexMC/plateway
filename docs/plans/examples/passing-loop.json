@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "name": "Oval with passing loop and siding",
+  "description": "An oval with a passing loop, so two trains can pass, and a short siding.",
+  "tracks": [
+    { "id": "main",
+      "start": { "x": 600, "y": 500, "heading": 0 },
+      "steps": [
+        { "turnout": "left", "as": "A", "set": "straight" },
+        { "straight": 128, "count": 3 },
+        { "turnout": "right", "as": "B", "enter": "out", "set": "straight" },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "straight": 128, "count": 2 },
+        { "turnout": "right", "as": "C", "set": "straight" },
+        { "straight": 128, "count": 3 },
+        { "curve": "R40", "turn": "left", "angle": 180 },
+        { "close": "main.start" }
+      ] },
+    { "id": "loop",
+      "start": { "from": "A.branch" },
+      "steps": [
+        { "curve": "R40", "turn": "right", "angle": 22.5 },
+        { "straight": 128 },
+        { "close": "B.branch" }
+      ] },
+    { "id": "siding",
+      "start": { "from": "C.branch" },
+      "steps": [
+        { "curve": "R40", "turn": "left", "angle": 22.5 },
+        { "straight": 128, "count": 2 },
+        { "buffer": true }
+      ] }
+  ]
+}

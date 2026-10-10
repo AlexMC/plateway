@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send feedback · Plateway</title>
+<meta name="description" content="Tell us what works, what breaks and what you miss in Plateway. No account needed.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#10191b">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="./"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></a>
+    <a class="btn btn-ghost btn-small legal-back" href="./">Back to Plateway</a>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <article class="wrap narrow">
+    <h1>Send feedback</h1>
+    <p class="lede">Something broke, confused you or is missing? Tell us. No account needed, and we read every message.</p>
+
+    <form class="feedback-form" data-feedback-form>
+      <label>Your feedback
+        <textarea name="message" required minlength="10" maxlength="4000" rows="8" autofocus></textarea>
+      </label>
+      <label><span>Your email <small>(optional, only if you want a reply)</small></span>
+        <input type="email" name="email" maxlength="254" autocomplete="email">
+      </label>
+      <div class="feedback-trap" aria-hidden="true">
+        <label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      </div>
+      <p class="feedback-note">We include the page you came from (<code data-feedback-page>/feedback.html</code>) so we know where to look. See the <a href="legal/privacy.html#feedback">privacy policy</a> for how long we keep it.</p>
+      <p class="feedback-error" data-feedback-error role="alert" hidden></p>
+      <button type="submit" class="btn btn-primary">Send feedback</button>
+    </form>
+
+    <div class="feedback-sent" data-feedback-sent role="status" tabindex="-1" hidden>
+      <h2>Thanks, it’s sent</h2>
+      <p>We read every message. If you left your email, we reply when we have something to say.</p>
+      <p><a href="./">Back to Plateway</a> · <a href="/app/">Open the app</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="wordmark wordmark-small"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></p>
+      <ul class="footer-links">
+        <li><a href="legal/privacy.html">Privacy</a></li>
+        <li><a href="legal/terms.html">Terms</a></li>
+        <li><a href="https://github.com/AlexMC/plateway">Source code (AGPL-3.0)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/feedback-page.js"></script>
+</body>
+</html>

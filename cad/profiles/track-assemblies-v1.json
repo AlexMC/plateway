@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "units": "mm",
+  "operationalHeight": 9.6,
+  "description": "Conservative convex XY operating envelopes of authored cassette mechanisms, including both selected states, continuous travel, support lands and keepers. Ordinary track strips and external brick contacts must be checked independently. Not original part silhouettes.",
+  "operationalEnvelopes": {
+    "printed_switch_left": [[[3.2, -84], [96.8, -84], [96.8, 84], [3.2, 84]]],
+    "printed_switch_right": [[[3.2, -84], [96.8, -84], [96.8, 84], [3.2, 84]]],
+    "printed_double_crossover": [
+      [[3.2, -84], [96.8, -84], [96.8, 84], [3.2, 84]],
+      [[3.2, 32], [96.8, 32], [96.8, 212], [3.2, 212]],
+      [[287.2, -84], [380.8, -84], [380.8, 96], [287.2, 96]],
+      [[287.2, 44], [380.8, 44], [380.8, 212], [287.2, 212]]
+    ]
+  },
+  "mechanism": {
+    "selectorTravel": 56,
+    "floorTop": 2,
+    "cassetteBottom": 2.3,
+    "cassetteTop": 2.9,
+    "keeperBottom": 3.2,
+    "flangewayWidth": 2.2,
+    "flangewayDepth": 3.2,
+    "tileJointClearance": 0.2
+  },
+  "verification": "Authored geometry candidate; digital solid, motion, flange and source-contact probes must pass for the generated revision. Physical wheel/brick/screw fits are not certified."
+}

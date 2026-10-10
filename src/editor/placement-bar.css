@@ -1,0 +1,24 @@
+/* Fixed at the bottom centre of the canvas, above the footer hint (two lines in 3D) and clear of the zoom cluster (bottom-right). */
+.placement-bar-dock{position:absolute;z-index:4;left:50%;bottom:62px;transform:translateX(-50%);width:max-content;display:flex;flex-direction:column;align-items:center;gap:6px;max-width:calc(100% - 150px);pointer-events:auto}
+.placement-bar{display:grid;gap:5px;max-width:100%;padding:6px 7px 7px;border:1px solid #57786a;border-radius:10px;background:#132322f5;box-shadow:0 8px 22px #0009}
+.placement-bar.is-placing{border-color:#88ad84}
+.placement-bar-head{display:flex;align-items:baseline;gap:8px;min-width:0;padding:0 3px;white-space:nowrap}
+.placement-bar-head strong{min-width:0;overflow:hidden;text-overflow:ellipsis;font:700 12px 'Space Grotesk',sans-serif;color:#e9eeea}
+.placement-bar-mode{color:#b8e788}
+.placement-bar-head small{min-width:0;overflow:hidden;text-overflow:ellipsis;color:#e7c786;font-size:11px}
+.placement-bar-actions{display:flex;flex-wrap:wrap;gap:4px}
+.placement-bar-actions button{display:inline-flex;align-items:center;gap:5px;height:30px;padding:0 7px;border:1px solid #3d5a50;border-radius:6px;background:#1c302d;color:#e9eeea;font-size:12px;font-weight:600;white-space:nowrap}
+.placement-bar-actions button:hover:not(:disabled){border-color:#b8e788;background:#25403a}
+.placement-bar-actions button:disabled{opacity:.42}
+.placement-bar-actions button.is-danger{color:#ffb4a2;border-color:#6b3f36}
+.placement-bar-actions button.is-danger:hover:not(:disabled){border-color:#ff8f75;background:#3a2522}
+.placement-bar kbd,.placement-tip kbd{min-width:17px;padding:0 4px;border:1px solid #4d6a5f;border-bottom-width:2px;border-radius:4px;background:#0f1c1b;color:#c5e7ca;font:600 10px/15px 'DM Sans',sans-serif;text-align:center}
+.placement-tip{display:flex;align-items:center;gap:8px;padding:5px 6px 5px 11px;border:1px solid #7fd8ff99;border-radius:8px;background:#102322f2;color:#e9f5dc;font-size:12px;box-shadow:0 6px 16px #0008;white-space:nowrap}
+.placement-tip button{display:grid;place-items:center;width:22px;height:22px;padding:0;border:1px solid #415650;border-radius:6px;background:#20332f;color:#c3ee8d}
+/* The 3D turn chip sits above the bar while the bar shows. */
+.builder-table.has-placement-bar .builder-turn-chip{bottom:140px}
+@media(max-width:760px){.placement-bar-dock{bottom:70px;max-width:calc(100% - 64px)}.placement-bar-actions button span{display:none}.placement-tip{white-space:normal}}
+/* Phones: the bar's note (why a turn is blocked) wraps instead of being cut off. */
+@media(max-width:760px){.placement-bar-head{flex-wrap:wrap;white-space:normal}.placement-bar-head small{overflow:visible}}
+/* Touch screens: actions big enough to tap. */
+@media(pointer:coarse){.placement-bar-actions button{height:36px;min-width:36px;justify-content:center}.placement-tip button{width:32px;height:32px}}

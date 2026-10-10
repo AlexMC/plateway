@@ -1,0 +1,69 @@
+/* The community gallery: gallery.html and the landing's Gallery section. Builds on styles.css. */
+
+/* `hidden` must win over the display these elements (and .btn) set. */
+.gallery-browse [hidden], .gallery-strip-wrap[hidden], .gallery-strip-wrap [hidden] { display: none !important; }
+.nav-links a[aria-current="page"] { color: var(--text); background: #1a2527; }
+.gallery-browse button.btn { background: transparent; cursor: pointer; }
+.gallery-browse button.btn:disabled { cursor: progress; opacity: .7; }
+
+/* A thumbnail: the published top view, as the app draws it (src/gallery/gallery.css). */
+.gallery-thumb { display: block; width: 100%; height: 100%; background: #132022; }
+.gallery-thumb-shelf { fill: #d7e3d7; fill-opacity: .25; stroke: #e8e9d6; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.gallery-thumb polyline { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.gallery-thumb-owned { stroke: var(--lime-2); }
+.gallery-thumb-printed { stroke: var(--orange); }
+
+/* gallery.html */
+.gallery-hero { padding: 56px 0 40px; background: radial-gradient(1100px 420px at 75% 0%, #1d2f2c 0%, transparent 65%); }
+.gallery-hero .lede { max-width: 44em; }
+.gallery-hero .cta-row { margin-bottom: 0; }
+.gallery-browse { padding: 8px 0 88px; }
+.gallery-status { color: var(--muted); }
+.gallery-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+.gallery-card { display: flex; flex-direction: column; min-width: 0; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; scroll-margin-top: 88px; }
+.gallery-card.is-target { border-color: var(--lime); box-shadow: 0 0 0 1px var(--lime); }
+.gallery-card-thumb { display: block; border-bottom: 1px solid var(--border); }
+.gallery-card-thumb .gallery-thumb { aspect-ratio: 16 / 10; height: auto; }
+.gallery-card-text { display: flex; flex-direction: column; flex: 1; gap: 14px; padding: 16px 18px 18px; font-size: 14px; line-height: 1.45; }
+.gallery-card-info { display: grid; gap: 4px; flex: 1; align-content: start; min-width: 0; }
+.gallery-card-info p { margin: 0; }
+.gallery-card-title { margin: 0 0 2px; font-size: 1.1rem; overflow-wrap: anywhere; }
+.gallery-card-meta { color: var(--muted); }
+.gallery-card-remix { color: var(--blue); overflow-wrap: anywhere; }
+.gallery-card-description { color: var(--text-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.gallery-card-open { align-self: flex-start; }
+.gallery-empty { display: grid; justify-items: center; gap: 4px; padding: 56px 24px; border: 1px dashed var(--border); border-radius: var(--radius); text-align: center; }
+.gallery-empty h2 { font-size: 1.5rem; }
+.gallery-empty p { color: var(--text-2); max-width: 32em; margin-bottom: 16px; }
+.gallery-error { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin: 20px 0 0; padding: 14px 18px; border: 1px solid #7b6646; border-radius: 10px; background: #2a2618; }
+.gallery-error p { margin: 0; color: var(--amber); font-weight: 700; }
+.gallery-more { display: flex; justify-content: center; margin: 36px 0 0; }
+
+/* The landing's Gallery section */
+.gallery-section { border-top: 1px solid var(--border-soft); }
+.gallery-strip-wrap { margin: 0 0 56px; }
+.gallery-strip { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.gallery-tile { min-width: 0; }
+.gallery-tile.is-placeholder { aspect-ratio: 1; border: 1px solid var(--border); border-radius: 10px; background: #132022; }
+.gallery-tile a { display: block; color: var(--text-2); text-decoration: none; font-size: 14px; font-weight: 700; }
+.gallery-tile .gallery-thumb { aspect-ratio: 1; height: auto; border: 1px solid var(--border); border-radius: 10px; }
+.gallery-tile a:hover { color: var(--lime); }
+.gallery-tile a:hover .gallery-thumb { border-color: var(--lime); }
+.gallery-tile-title { display: block; margin-top: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gallery-strip-empty { color: var(--muted); padding: 28px 24px; border: 1px dashed var(--border); border-radius: var(--radius); text-align: center; margin: 0; }
+.gallery-strip-more { margin: 16px 0 0; text-align: right; font-weight: 700; }
+.gallery-points { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.gallery-points .card h3 { margin-bottom: 8px; }
+.gallery-section .cta-row { margin: 40px 0 0; }
+
+@media (max-width: 1040px) {
+  .gallery-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .gallery-points { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .gallery-hero { padding: 32px 0 28px; }
+  .gallery-browse { padding-bottom: 64px; }
+  .gallery-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .gallery-strip-more { text-align: left; }
+  .gallery-points { grid-template-columns: 1fr; }
+}

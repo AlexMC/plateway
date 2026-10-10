@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "items": [
+    {
+      "id": "community_sample_curve_90",
+      "version": 1,
+      "kind": "piece",
+      "state": "live",
+      "name": "Sample 90° curve",
+      "licence": "CC-BY-4.0",
+      "credit": "Plateway sample",
+      "file": "pieces/community_sample_curve_90/1/piece.stl",
+      "digest": "9a64c56a127c4e466a5f47a56e5d47c5098072d7c38f96c6b66853b8bdff6856",
+      "piece": {
+        "ends": [
+          {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "heading": 3.141592653589793
+          },
+          {
+            "x": 120,
+            "y": 120,
+            "z": 7,
+            "heading": 1.5707963267948966
+          }
+        ]
+      }
+    },
+    {
+      "id": "community_sample_loco",
+      "version": 1,
+      "kind": "train",
+      "state": "live",
+      "name": "Sample locomotive",
+      "licence": "CC-BY-2.0",
+      "credit": "LDraw: Michael Heidemann, Douglas Taylor, Jr., Guy Vivan",
+      "file": "trains/community_sample_loco/1/car.glb",
+      "digest": "6687e05b943e80791a9c6ad24b56c5b6f992e1879e7db16b299f47f212481e3a",
+      "train": {
+        "year": 1966,
+        "power": "4.5V",
+        "gauge": "standard",
+        "car": {
+          "kind": "loco",
+          "motorised": true,
+          "length": 166.0,
+          "width": 56.0,
+          "height": 92.0,
+          "bogies": [
+            -24.0,
+            24.0
+          ],
+          "wheelbase": 48.0,
+          "couplers": {
+            "front": 72.0,
+            "rear": -94.0
+          },
+          "outline": [
+            [
+              -93.3,
+              -1.7
+            ],
+            [
+              -91.7,
+              -2.4
+            ],
+            [
+              -89.9,
+              -1.6
+            ],
+            [
+              -82.0,
+              -1.6
+            ],
+            [
+              -82.0,
+              -4.0
+            ],
+            [
+              -80.8,
+              -6.8
+            ],
+            [
+              -80.0,
+              -7.2
+            ],
+            [
+              -80.0,
+              -24.0
+            ],
+            [
+              -31.9,
+              -24.0
+            ],
+            [
+              -32.0,
+              -28.0
+            ],
+            [
+              56.0,
+              -28.0
+            ],
+            [
+              56.0,
+              -24.0
+            ],
+            [
+              64.0,
+              -24.0
+            ],
+            [
+              64.0,
+              -16.0
+            ],
+            [
+              65.0,
+              -16.0
+            ],
+            [
+              65.0,
+              -7.8
+            ],
+            [
+              67.1,
+              -7.4
+            ],
+            [
+              69.7,
+              -5.7
+            ],
+            [
+              71.4,
+              -3.1
+            ],
+            [
+              72.0,
+              0.0
+            ],
+            [
+              71.4,
+              3.1
+            ],
+            [
+              69.7,
+              5.7
+            ],
+            [
+              67.1,
+              7.4
+            ],
+            [
+              65.0,
+              7.8
+            ],
+            [
+              65.0,
+              16.0
+            ],
+            [
+              64.0,
+              16.0
+            ],
+            [
+              64.0,
+              24.0
+            ],
+            [
+              56.0,
+              24.0
+            ],
+            [
+              56.0,
+              28.0
+            ],
+            [
+              -32.0,
+              28.0
+            ],
+            [
+              -31.9,
+              24.0
+            ],
+            [
+              -80.0,
+              24.0
+            ],
+            [
+              -80.0,
+              7.2
+            ],
+            [
+              -80.8,
+              6.8
+            ],
+            [
+              -82.0,
+              4.0
+            ],
+            [
+              -82.0,
+              1.6
+            ],
+            [
+              -89.9,
+              1.6
+            ],
+            [
+              -91.7,
+              2.4
+            ],
+            [
+              -93.3,
+              1.7
+            ],
+            [
+              -94.0,
+              -0.0
+            ]
+          ],
+          "triangles": 4528
+        }
+      }
+    },
+    {
+      "id": "community_plain_table",
+      "version": 1,
+      "kind": "furniture",
+      "state": "live",
+      "name": "Plain table",
+      "licence": "CC0-1.0",
+      "credit": "Plateway sample",
+      "file": "furniture/community_plain_table/1/table.json",
+      "digest": "be733527a650a94393f28f8b889db74f2d129c36a17d44eed7905f23299f748e"
+    },
+    {
+      "id": "community_takedown_viaduct",
+      "version": 2,
+      "kind": "piece",
+      "state": "removed"
+    }
+  ]
+}

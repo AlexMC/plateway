@@ -1,0 +1,2092 @@
+[
+ {
+  "rise": 38,
+  "printer": "X1 Carbon",
+  "start": 0,
+  "parts": [
+   {
+    "id": "1",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.15126050420168,
+     "grade0": 0,
+     "grade1": 0.03991596638655462,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0,
+     "pitch": 0
+    },
+    "end": {
+     "z": 4.15126050420168,
+     "pitch": 0.03989478746747549
+    }
+   },
+   {
+    "id": "2",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 176,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.025210084033613,
+     "grade0": 0.03991596638655462,
+     "grade1": 0.039915966386554626,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 4.15126050420168,
+     "pitch": 0.03989478746747549
+    },
+    "end": {
+     "z": 11.176470588235293,
+     "pitch": 0.0398947874674755
+    }
+   },
+   {
+    "id": "3",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 196,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.82352941176471,
+     "grade0": 0.039915966386554626,
+     "grade1": 0.03991596638655462,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 11.176470588235293,
+     "pitch": 0.0398947874674755
+    },
+    "end": {
+     "z": 19.000000000000004,
+     "pitch": 0.03989478746747549
+    }
+   },
+   {
+    "id": "4",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 196,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.823529411764703,
+     "grade0": 0.03991596638655462,
+     "grade1": 0.03991596638655461,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 19.000000000000004,
+     "pitch": 0.03989478746747549
+    },
+    "end": {
+     "z": 26.823529411764707,
+     "pitch": 0.03989478746747548
+    }
+   },
+   {
+    "id": "5",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 176,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.025210084033613,
+     "grade0": 0.03991596638655461,
+     "grade1": 0.03991596638655462,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 26.823529411764707,
+     "pitch": 0.03989478746747548
+    },
+    "end": {
+     "z": 33.84873949579832,
+     "pitch": 0.03989478746747549
+    }
+   },
+   {
+    "id": "6",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.15126050420168,
+     "grade0": 0.03991596638655462,
+     "grade1": 0,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 33.84873949579832,
+     "pitch": 0.03989478746747549
+    },
+    "end": {
+     "z": 38,
+     "pitch": 0
+    }
+   }
+  ]
+ },
+ {
+  "rise": 38,
+  "printer": "A1 mini",
+  "start": 0,
+  "parts": [
+   {
+    "id": "1",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 96,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 0.8842921784098257,
+     "grade0": 0,
+     "grade1": 0.018422753716871357,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0,
+     "pitch": 0
+    },
+    "end": {
+     "z": 0.8842921784098257,
+     "pitch": 0.018420669926833316
+    }
+   },
+   {
+    "id": "2",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 3.2669683257918543,
+     "grade0": 0.018422753716871357,
+     "grade1": 0.03991596638655462,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0.8842921784098257,
+     "pitch": 0.018420669926833316
+    },
+    "end": {
+     "z": 4.15126050420168,
+     "pitch": 0.03989478746747549
+    }
+   },
+   {
+    "id": "3",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.470588235294118,
+     "grade0": 0.03991596638655462,
+     "grade1": 0.03991596638655463,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 4.15126050420168,
+     "pitch": 0.03989478746747549
+    },
+    "end": {
+     "z": 8.621848739495798,
+     "pitch": 0.039894787467475504
+    }
+   },
+   {
+    "id": "4",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.109243697478989,
+     "grade0": 0.03991596638655463,
+     "grade1": 0.03991596638655463,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 8.621848739495798,
+     "pitch": 0.039894787467475504
+    },
+    "end": {
+     "z": 13.731092436974787,
+     "pitch": 0.039894787467475504
+    }
+   },
+   {
+    "id": "5",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 132,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.268907563025216,
+     "grade0": 0.03991596638655463,
+     "grade1": 0.03991596638655462,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 13.731092436974787,
+     "pitch": 0.039894787467475504
+    },
+    "end": {
+     "z": 19.000000000000004,
+     "pitch": 0.03989478746747549
+    }
+   },
+   {
+    "id": "6",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 132,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.268907563025209,
+     "grade0": 0.03991596638655462,
+     "grade1": 0.03991596638655463,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 19.000000000000004,
+     "pitch": 0.03989478746747549
+    },
+    "end": {
+     "z": 24.268907563025213,
+     "pitch": 0.039894787467475504
+    }
+   },
+   {
+    "id": "7",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.109243697478991,
+     "grade0": 0.03991596638655463,
+     "grade1": 0.03991596638655461,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 24.268907563025213,
+     "pitch": 0.039894787467475504
+    },
+    "end": {
+     "z": 29.378151260504204,
+     "pitch": 0.03989478746747548
+    }
+   },
+   {
+    "id": "8",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.470588235294116,
+     "grade0": 0.03991596638655461,
+     "grade1": 0.03991596638655462,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 29.378151260504204,
+     "pitch": 0.03989478746747548
+    },
+    "end": {
+     "z": 33.84873949579832,
+     "pitch": 0.03989478746747549
+    }
+   },
+   {
+    "id": "9",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 3.266968325791858,
+     "grade0": 0.03991596638655462,
+     "grade1": 0.018422753716871368,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 33.84873949579832,
+     "pitch": 0.03989478746747549
+    },
+    "end": {
+     "z": 37.11570782159018,
+     "pitch": 0.01842066992683333
+    }
+   },
+   {
+    "id": "10",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 96,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 0.8842921784098223,
+     "grade0": 0.018422753716871368,
+     "grade1": 0,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 37.11570782159018,
+     "pitch": 0.01842066992683333
+    },
+    "end": {
+     "z": 38,
+     "pitch": 0
+    }
+   }
+  ]
+ },
+ {
+  "rise": 64,
+  "printer": "X1 Carbon",
+  "start": 0,
+  "parts": [
+   {
+    "id": "1",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.16,
+     "grade0": 0,
+     "grade1": 0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0,
+     "pitch": 0
+    },
+    "end": {
+     "z": 4.16,
+     "pitch": 0.039978687123290044
+    }
+   },
+   {
+    "id": "2",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 8.320000000000002,
+     "grade0": 0.04,
+     "grade1": 0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 4.16,
+     "pitch": 0.039978687123290044
+    },
+    "end": {
+     "z": 12.480000000000002,
+     "pitch": 0.039978687123290044
+    }
+   },
+   {
+    "id": "3",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.679999999999998,
+     "grade0": 0.04,
+     "grade1": 0.039999999999999994,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 12.480000000000002,
+     "pitch": 0.039978687123290044
+    },
+    "end": {
+     "z": 20.16,
+     "pitch": 0.03997868712329004
+    }
+   },
+   {
+    "id": "4",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.680000000000003,
+     "grade0": 0.039999999999999994,
+     "grade1": 0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 20.16,
+     "pitch": 0.03997868712329004
+    },
+    "end": {
+     "z": 27.840000000000003,
+     "pitch": 0.03997868712329005
+    }
+   },
+   {
+    "id": "5",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 8.320000000000007,
+     "grade0": 0.04000000000000001,
+     "grade1": 0.040000000000000015,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 27.840000000000003,
+     "pitch": 0.03997868712329005
+    },
+    "end": {
+     "z": 36.16000000000001,
+     "pitch": 0.03997868712329006
+    }
+   },
+   {
+    "id": "6",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.679999999999993,
+     "grade0": 0.040000000000000015,
+     "grade1": 0.04000000000000002,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 36.16000000000001,
+     "pitch": 0.03997868712329006
+    },
+    "end": {
+     "z": 43.84,
+     "pitch": 0.039978687123290065
+    }
+   },
+   {
+    "id": "7",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 7.680000000000014,
+     "grade0": 0.04000000000000002,
+     "grade1": 0.03999999999999999,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 43.84,
+     "pitch": 0.039978687123290065
+    },
+    "end": {
+     "z": 51.52000000000002,
+     "pitch": 0.03997868712329003
+    }
+   },
+   {
+    "id": "8",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 8.319999999999986,
+     "grade0": 0.03999999999999999,
+     "grade1": 0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 51.52000000000002,
+     "pitch": 0.03997868712329003
+    },
+    "end": {
+     "z": 59.84,
+     "pitch": 0.039978687123290044
+    }
+   },
+   {
+    "id": "9",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.159999999999997,
+     "grade0": 0.04,
+     "grade1": 0,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 59.84,
+     "pitch": 0.039978687123290044
+    },
+    "end": {
+     "z": 64,
+     "pitch": 0
+    }
+   }
+  ]
+ },
+ {
+  "rise": 64,
+  "printer": "A1 mini",
+  "start": 0,
+  "parts": [
+   {
+    "id": "1",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 96,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 0.8861538461538465,
+     "grade0": 0,
+     "grade1": 0.01846153846153846,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0,
+     "pitch": 0
+    },
+    "end": {
+     "z": 0.8861538461538465,
+     "pitch": 0.01845944148479427
+    }
+   },
+   {
+    "id": "2",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 3.2738461538461534,
+     "grade0": 0.01846153846153846,
+     "grade1": 0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0.8861538461538465,
+     "pitch": 0.01845944148479427
+    },
+    "end": {
+     "z": 4.16,
+     "pitch": 0.039978687123290044
+    }
+   },
+   {
+    "id": "3",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.48,
+     "grade0": 0.04,
+     "grade1": 0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 4.16,
+     "pitch": 0.039978687123290044
+    },
+    "end": {
+     "z": 8.64,
+     "pitch": 0.039978687123290044
+    }
+   },
+   {
+    "id": "4",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.120000000000001,
+     "grade0": 0.04000000000000001,
+     "grade1": 0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 8.64,
+     "pitch": 0.039978687123290044
+    },
+    "end": {
+     "z": 13.760000000000002,
+     "pitch": 0.03997868712329005
+    }
+   },
+   {
+    "id": "5",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.120000000000001,
+     "grade0": 0.04000000000000001,
+     "grade1": 0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 13.760000000000002,
+     "pitch": 0.03997868712329005
+    },
+    "end": {
+     "z": 18.880000000000003,
+     "pitch": 0.03997868712329005
+    }
+   },
+   {
+    "id": "6",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.1200000000000045,
+     "grade0": 0.04000000000000001,
+     "grade1": 0.040000000000000015,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 18.880000000000003,
+     "pitch": 0.03997868712329005
+    },
+    "end": {
+     "z": 24.000000000000007,
+     "pitch": 0.03997868712329006
+    }
+   },
+   {
+    "id": "7",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.119999999999994,
+     "grade0": 0.040000000000000015,
+     "grade1": 0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 24.000000000000007,
+     "pitch": 0.03997868712329006
+    },
+    "end": {
+     "z": 29.12,
+     "pitch": 0.03997868712329005
+    }
+   },
+   {
+    "id": "8",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 144,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.760000000000002,
+     "grade0": 0.04000000000000001,
+     "grade1": 0.039999999999999994,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 29.12,
+     "pitch": 0.03997868712329005
+    },
+    "end": {
+     "z": 34.88,
+     "pitch": 0.03997868712329004
+    }
+   },
+   {
+    "id": "9",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.119999999999997,
+     "grade0": 0.039999999999999994,
+     "grade1": 0.039999999999999994,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 34.88,
+     "pitch": 0.03997868712329004
+    },
+    "end": {
+     "z": 40,
+     "pitch": 0.03997868712329004
+    }
+   },
+   {
+    "id": "10",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.119999999999997,
+     "grade0": 0.039999999999999994,
+     "grade1": 0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 40,
+     "pitch": 0.03997868712329004
+    },
+    "end": {
+     "z": 45.12,
+     "pitch": 0.03997868712329005
+    }
+   },
+   {
+    "id": "11",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.120000000000012,
+     "grade0": 0.04000000000000001,
+     "grade1": 0.040000000000000015,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 45.12,
+     "pitch": 0.03997868712329005
+    },
+    "end": {
+     "z": 50.24000000000001,
+     "pitch": 0.03997868712329006
+    }
+   },
+   {
+    "id": "12",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 5.119999999999997,
+     "grade0": 0.040000000000000015,
+     "grade1": 0.04000000000000002,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 50.24000000000001,
+     "pitch": 0.03997868712329006
+    },
+    "end": {
+     "z": 55.36000000000001,
+     "pitch": 0.039978687123290065
+    }
+   },
+   {
+    "id": "13",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 4.479999999999997,
+     "grade0": 0.04000000000000002,
+     "grade1": 0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 55.36000000000001,
+     "pitch": 0.039978687123290065
+    },
+    "end": {
+     "z": 59.84,
+     "pitch": 0.039978687123290044
+    }
+   },
+   {
+    "id": "14",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 3.2738461538461507,
+     "grade0": 0.04,
+     "grade1": 0.018461538461538477,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 59.84,
+     "pitch": 0.039978687123290044
+    },
+    "end": {
+     "z": 63.113846153846154,
+     "pitch": 0.018459441484794288
+    }
+   },
+   {
+    "id": "15",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 96,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": 0.8861538461538458,
+     "grade0": 0.018461538461538477,
+     "grade1": 0,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 63.113846153846154,
+     "pitch": 0.018459441484794288
+    },
+    "end": {
+     "z": 64,
+     "pitch": 0
+    }
+   }
+  ]
+ },
+ {
+  "rise": -64,
+  "printer": "X1 Carbon",
+  "start": 64,
+  "parts": [
+   {
+    "id": "1",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -4.16,
+     "grade0": 0,
+     "grade1": -0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 64,
+     "pitch": 0
+    },
+    "end": {
+     "z": 59.84,
+     "pitch": -0.039978687123290044
+    }
+   },
+   {
+    "id": "2",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -8.320000000000002,
+     "grade0": -0.04,
+     "grade1": -0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 59.84,
+     "pitch": -0.039978687123290044
+    },
+    "end": {
+     "z": 51.519999999999996,
+     "pitch": -0.039978687123290044
+    }
+   },
+   {
+    "id": "3",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -7.679999999999998,
+     "grade0": -0.04,
+     "grade1": -0.039999999999999994,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 51.519999999999996,
+     "pitch": -0.039978687123290044
+    },
+    "end": {
+     "z": 43.84,
+     "pitch": -0.03997868712329004
+    }
+   },
+   {
+    "id": "4",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -7.680000000000003,
+     "grade0": -0.039999999999999994,
+     "grade1": -0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 43.84,
+     "pitch": -0.03997868712329004
+    },
+    "end": {
+     "z": 36.16,
+     "pitch": -0.03997868712329005
+    }
+   },
+   {
+    "id": "5",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -8.320000000000007,
+     "grade0": -0.04000000000000001,
+     "grade1": -0.040000000000000015,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 36.16,
+     "pitch": -0.03997868712329005
+    },
+    "end": {
+     "z": 27.83999999999999,
+     "pitch": -0.03997868712329006
+    }
+   },
+   {
+    "id": "6",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -7.679999999999993,
+     "grade0": -0.040000000000000015,
+     "grade1": -0.04000000000000002,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 27.83999999999999,
+     "pitch": -0.03997868712329006
+    },
+    "end": {
+     "z": 20.159999999999997,
+     "pitch": -0.039978687123290065
+    }
+   },
+   {
+    "id": "7",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 192,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -7.680000000000014,
+     "grade0": -0.04000000000000002,
+     "grade1": -0.03999999999999999,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 20.159999999999997,
+     "pitch": -0.039978687123290065
+    },
+    "end": {
+     "z": 12.479999999999983,
+     "pitch": -0.03997868712329003
+    }
+   },
+   {
+    "id": "8",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -8.319999999999986,
+     "grade0": -0.03999999999999999,
+     "grade1": -0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 12.479999999999983,
+     "pitch": -0.03997868712329003
+    },
+    "end": {
+     "z": 4.159999999999997,
+     "pitch": -0.039978687123290044
+    }
+   },
+   {
+    "id": "9",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 208,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -4.159999999999997,
+     "grade0": -0.04,
+     "grade1": 0,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 4.159999999999997,
+     "pitch": -0.039978687123290044
+    },
+    "end": {
+     "z": 0,
+     "pitch": 0
+    }
+   }
+  ]
+ },
+ {
+  "rise": -64,
+  "printer": "A1 mini",
+  "start": 64,
+  "parts": [
+   {
+    "id": "1",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 96,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -0.8861538461538465,
+     "grade0": 0,
+     "grade1": -0.01846153846153846,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 64,
+     "pitch": 0
+    },
+    "end": {
+     "z": 63.113846153846154,
+     "pitch": -0.01845944148479427
+    }
+   },
+   {
+    "id": "2",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -3.2738461538461534,
+     "grade0": -0.01846153846153846,
+     "grade1": -0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 63.113846153846154,
+     "pitch": -0.01845944148479427
+    },
+    "end": {
+     "z": 59.84,
+     "pitch": -0.039978687123290044
+    }
+   },
+   {
+    "id": "3",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -4.48,
+     "grade0": -0.04,
+     "grade1": -0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 59.84,
+     "pitch": -0.039978687123290044
+    },
+    "end": {
+     "z": 55.36,
+     "pitch": -0.039978687123290044
+    }
+   },
+   {
+    "id": "4",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.120000000000001,
+     "grade0": -0.04000000000000001,
+     "grade1": -0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 55.36,
+     "pitch": -0.039978687123290044
+    },
+    "end": {
+     "z": 50.239999999999995,
+     "pitch": -0.03997868712329005
+    }
+   },
+   {
+    "id": "5",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.120000000000001,
+     "grade0": -0.04000000000000001,
+     "grade1": -0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 50.239999999999995,
+     "pitch": -0.03997868712329005
+    },
+    "end": {
+     "z": 45.12,
+     "pitch": -0.03997868712329005
+    }
+   },
+   {
+    "id": "6",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.1200000000000045,
+     "grade0": -0.04000000000000001,
+     "grade1": -0.040000000000000015,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 45.12,
+     "pitch": -0.03997868712329005
+    },
+    "end": {
+     "z": 39.99999999999999,
+     "pitch": -0.03997868712329006
+    }
+   },
+   {
+    "id": "7",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.119999999999994,
+     "grade0": -0.040000000000000015,
+     "grade1": -0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 39.99999999999999,
+     "pitch": -0.03997868712329006
+    },
+    "end": {
+     "z": 34.879999999999995,
+     "pitch": -0.03997868712329005
+    }
+   },
+   {
+    "id": "8",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 144,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.760000000000002,
+     "grade0": -0.04000000000000001,
+     "grade1": -0.039999999999999994,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 34.879999999999995,
+     "pitch": -0.03997868712329005
+    },
+    "end": {
+     "z": 29.119999999999997,
+     "pitch": -0.03997868712329004
+    }
+   },
+   {
+    "id": "9",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.119999999999997,
+     "grade0": -0.039999999999999994,
+     "grade1": -0.039999999999999994,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 29.119999999999997,
+     "pitch": -0.03997868712329004
+    },
+    "end": {
+     "z": 24,
+     "pitch": -0.03997868712329004
+    }
+   },
+   {
+    "id": "10",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.119999999999997,
+     "grade0": -0.039999999999999994,
+     "grade1": -0.04000000000000001,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 24,
+     "pitch": -0.03997868712329004
+    },
+    "end": {
+     "z": 18.880000000000003,
+     "pitch": -0.03997868712329005
+    }
+   },
+   {
+    "id": "11",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.120000000000012,
+     "grade0": -0.04000000000000001,
+     "grade1": -0.040000000000000015,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 18.880000000000003,
+     "pitch": -0.03997868712329005
+    },
+    "end": {
+     "z": 13.759999999999991,
+     "pitch": -0.03997868712329006
+    }
+   },
+   {
+    "id": "12",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 128,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -5.119999999999997,
+     "grade0": -0.040000000000000015,
+     "grade1": -0.04000000000000002,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 13.759999999999991,
+     "pitch": -0.03997868712329006
+    },
+    "end": {
+     "z": 8.639999999999993,
+     "pitch": -0.039978687123290065
+    }
+   },
+   {
+    "id": "13",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -4.479999999999997,
+     "grade0": -0.04000000000000002,
+     "grade1": -0.04,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 8.639999999999993,
+     "pitch": -0.039978687123290065
+    },
+    "end": {
+     "z": 4.159999999999997,
+     "pitch": -0.039978687123290044
+    }
+   },
+   {
+    "id": "14",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 112,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -3.2738461538461507,
+     "grade0": -0.04,
+     "grade1": -0.018461538461538477,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 4.159999999999997,
+     "pitch": -0.039978687123290044
+    },
+    "end": {
+     "z": 0.8861538461538458,
+     "pitch": -0.018459441484794288
+    }
+   },
+   {
+    "id": "15",
+    "parameters": {
+     "segments": 1,
+     "s0_len": 96,
+     "s0_k0": 0,
+     "s0_k1": 0,
+     "z0": 0,
+     "z1": -0.8861538461538458,
+     "grade0": -0.018461538461538477,
+     "grade1": 0,
+     "vcurve": 2560,
+     "cant0": 0,
+     "cant1": 0,
+     "ends": 3,
+     "rail_gauge": 40,
+     "rail_interface_width": 2.4,
+     "body_width": 63.8,
+     "base_thickness": 3.2,
+     "rail_height": 6.4,
+     "connector_version": 1,
+     "fit_adjustment": 0
+    },
+    "start": {
+     "z": 0.8861538461538458,
+     "pitch": -0.018459441484794288
+    },
+    "end": {
+     "z": 0,
+     "pitch": 0
+    }
+   }
+  ]
+ }
+]

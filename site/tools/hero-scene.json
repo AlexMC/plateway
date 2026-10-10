@@ -1,0 +1,39 @@
+{
+  "moving": [
+    { "route": 1, "cars": ["10233-1#0", "10233-1#1", "10233-1#2"], "speed": 160, "phase": 0 },
+    { "route": 3, "cars": ["10194-1#1", "10194-1#0", "10194-1#2"], "speed": 177.3, "phase": 10100,
+      "switches": [{ "route": 1, "piece": 0, "state": "diverging" }, { "route": 2, "piece": 9, "state": "diverging" }] }
+  ],
+  "parked": [
+    { "route": 5, "cars": ["7760-1#0"], "lead": 851 },
+    { "route": 5, "cars": ["7816-1#0"], "lead": 530 },
+    { "route": 5, "cars": ["10205-1#0"] },
+    { "route": 8, "cars": ["3740-1#0"] },
+    { "route": 9, "cars": ["4563-1#2"] },
+    { "route": 10, "cars": ["7735-1#3"] },
+    { "route": 11, "cars": ["7722-1#3"] },
+    { "route": 6, "cars": ["7735-1#0", "7735-1#1"] },
+    { "route": 7, "cars": ["4536-1#0"] },
+    { "route": 4, "cars": ["167-1#0"] }
+  ],
+  "camera": {
+    "_doc": [
+      "Hero camera keyframes, read by site/js/hero3d.js from hero.json (build-hero.mjs copies this block there).",
+      "Angles in degrees: azimuth is the camera's direction from its target (0 = +x, 90 = +y), elevation is above the table.",
+      "Distances in mm; times in seconds of the cinematic clock, which pauses while the hero is off screen.",
+      "startClock: where the trains' timetable (period 79.5 s) starts, so the Emerald Night crosses the viaduct in front of the opening shot.",
+      "opening: the first frame and the poster, held for `hold` s. pullBack: seconds of the eased move to the whole-layout view.",
+      "full: the whole layout, every vertex inside `margin` [x, y] of the frame (shares of half its width and height) at every sway angle.",
+      "sway: a gentle orbit `degrees` either side of full.azimuth, `period` s per cycle.",
+      "follow: at least `every` s apart, when all of train `train` (index in hero.json trains) stays above `minHeight` for the whole move, push in over `in` s, ride along for `hold` s and pull out over `out` s.",
+      "resume: after `after` s without a drag or pinch, blend back into the cinematic over `blend` s, longer if needed so the view turns no faster than `maxTurn` degrees a second."
+    ],
+    "startClock": 60.55,
+    "opening": { "target": [1300, 1100, 30], "azimuth": 195, "elevation": 18, "distance": 1200, "hold": 5 },
+    "pullBack": 12,
+    "full": { "azimuth": -53.13, "elevation": 23, "margin": [0.94, 0.88] },
+    "sway": { "degrees": 16, "period": 40 },
+    "follow": { "train": 1, "every": 45, "in": 5, "hold": 5, "out": 5, "distance": 750, "elevation": 20, "minHeight": 60 },
+    "resume": { "after": 10, "blend": 5, "maxTurn": 10 }
+  }
+}

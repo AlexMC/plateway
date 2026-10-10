@@ -1,0 +1,8 @@
+/* The Feedback dialog: the Save/Open dialog language from editor/styles.css. */
+.feedback-dialog { width: min(500px, 100%); }
+.feedback-text { color: #c8d6cc; font-size: 14px; line-height: 1.5; margin: 0 0 18px; }
+.feedback-dialog textarea { background: #111d1d; color: #e5eee7; border: 1px solid #5c715e; border-radius: 7px; padding: 11px 12px;
+  font: 400 15px/1.5 'DM Sans', sans-serif; resize: vertical; min-height: 120px; }
+.feedback-dialog textarea:focus { outline: 2px solid #b8e788; outline-offset: 1px; }
+.feedback-email { margin-top: 14px; }
+.feedback-error { color: #ffb4a6; font-size: 13px; margin: -8px 0 16px; }

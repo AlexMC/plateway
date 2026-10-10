@@ -1,0 +1,177 @@
+.builder-table{background:radial-gradient(circle at 45% 35%,#1b3431 0%,#122322 52%,#0d1c1e 100%)}
+.builder-plan{left:2.5%;width:95%;top:11%;height:80%;cursor:crosshair;outline:none}
+.builder-plan:focus-visible{outline:2px solid #b8e788;outline-offset:-3px}
+.builder-room{fill:#152626;stroke:#54736b;stroke-width:3;stroke-dasharray:13 11}
+.builder-world-grid{fill:url(#builder-world-grid);pointer-events:none}
+.builder-room-label{font-size:20px;fill:#9bbab0}
+.builder-furniture rect{fill:#d7e3d7;fill-opacity:.7;stroke:#e8e9d6;stroke-width:7;vector-effect:non-scaling-stroke;cursor:grab}
+.builder-furniture line{stroke:#334640;stroke-width:5;stroke-dasharray:12 9;pointer-events:none}
+.builder-furniture text{fill:#243633;font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:700;pointer-events:none}
+.builder-furniture.selected rect{stroke:#c3ee8d;stroke-width:10;filter:drop-shadow(0 0 8px #c3ee8d)}
+.builder-furniture.preview{pointer-events:none;opacity:.58}
+.builder-furniture.preview rect{fill:#c3ee8d;cursor:crosshair}
+.builder-furniture.placeholder rect{fill:#9aa39f;fill-opacity:.35;stroke-dasharray:14 10}
+.builder-palette-section{position:sticky;top:0;z-index:2;margin:0;background:#111b1d;box-shadow:0 1px 0 #26332f;color:#c3ee8d;font:700 11px 'Space Grotesk',sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.builder-palette-section-head{display:flex;align-items:center;gap:6px;width:100%;padding:9px 2px 7px;border:0;background:none;color:inherit;letter-spacing:inherit;text-transform:inherit;text-align:left}
+button.builder-palette-section-head:hover .builder-palette-section-name{color:#e9f5dc}
+.builder-palette-chevron{display:inline-block;width:10px;color:#8ca19a;font-size:14px;line-height:1;transition:transform .15s}
+.builder-palette-section-head[aria-expanded="true"] .builder-palette-chevron{transform:rotate(90deg)}
+.builder-palette-count{margin-left:auto;min-width:20px;padding:0 6px;border-radius:8px;background:#1c292a;color:#8ca19a;font:600 10px/16px 'DM Sans',sans-serif;letter-spacing:0;text-align:center}
+.builder-palette-group .builder-tiles{margin:6px 0 8px}
+.builder-palette-group-note{margin:6px 2px 0;color:#8ca19a;font-size:11px;line-height:1.35}
+.builder-palette-owned{margin-top:10px}
+.builder-palette-owned-title{margin:0;color:#b8e788;font:700 10px 'Space Grotesk',sans-serif;letter-spacing:.1em}
+.builder-palette-owned .builder-tiles{grid-template-columns:repeat(auto-fill,minmax(60px,1fr));gap:4px;margin-top:5px;max-height:122px;overflow-y:auto}
+.builder-palette-owned .builder-tile{padding:3px 5px 4px;border-radius:8px;gap:0}
+.builder-palette-owned .builder-tile-preview{height:22px;margin-bottom:1px}
+.builder-palette-owned .builder-tile strong{display:block;font-size:10px;white-space:nowrap}
+.builder-palette-owned .builder-tile small{font-size:9px;line-height:1.25}
+.builder-palette-owned .builder-tile-count{top:2px;right:2px;min-width:15px;height:15px;padding:0 4px;font-size:9px;line-height:15px}
+.builder-palette-owned .builder-tile::before{top:6px;bottom:6px}
+.builder .builder-palette-owned-none{display:block;margin-top:10px;padding:0;border:0;background:none;color:#c3ee8d;font-size:11px;text-align:left;text-decoration:underline;text-underline-offset:2px}
+.builder-furniture-miniature rect{fill:none;stroke:#e5e6dc;stroke-width:4}
+.builder-furniture-miniature path{fill:none;stroke:#e5e6dc;stroke-width:2}
+.builder-furniture-error{position:absolute;z-index:4;top:124px;left:20px;max-width:340px;padding:9px 12px;border:1px solid #e5ad9d;border-radius:7px;background:#442c2c;color:#ffe2d8;font-size:12px}
+.builder-piece{pointer-events:none}
+.builder-piece-bed,.builder-piece-deck,.builder-piece-rail,.builder-piece-spine,.builder-piece-selection{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.builder-piece-bed{stroke:#2f4943}
+.builder-piece.is-printed .builder-piece-bed{stroke:#654932}
+.builder-piece-deck{stroke:#a27450;stroke-opacity:.83}
+.builder-piece-tie{stroke:#182e2b;stroke-width:7;stroke-linecap:round}
+.builder-piece.is-printed .builder-piece-tie{stroke:#3e2d25}
+.builder-piece-rail{stroke:#c5e5b1;stroke-linecap:round;stroke-linejoin:round}
+.builder-piece.is-printed .builder-piece-rail{stroke:#ffd4a5}
+.builder-piece-rack{fill:none;stroke:#b98ad6}
+.builder-piece.is-elevated .builder-piece-bed{stroke:#8a5e3d}
+.builder-piece.is-elevated .builder-piece-rail{stroke:#ffc083}
+.builder-piece.is-unresolved .builder-piece-bed{stroke:#683d42}
+.builder-piece.is-unresolved .builder-piece-rail{stroke:#ffaaa0}
+.builder-piece-solid{fill:#38574e;stroke:none}
+.builder-piece.is-printed .builder-piece-solid{fill:#69513d}
+.builder-piece.is-fast .builder-piece-solid{fill:#6d6134}
+.builder-piece.is-fast .builder-piece-rail{stroke:#ffeaa6}
+.builder-piece.is-selected .builder-piece-solid{fill:#739660}
+.builder-piece.is-unresolved .builder-piece-solid{fill:#683d42}
+.builder-piece.is-standard .builder-piece-rail{stroke-linecap:butt}
+.builder-piece-spine{stroke:#abcdb2;stroke-width:1.8;stroke-dasharray:3 10;opacity:.7}
+.builder-piece.is-printed .builder-piece-spine{stroke:#f3be85}
+.builder-piece-selection{stroke:#b8e788;stroke-opacity:.54;stroke-dasharray:8 12}
+.builder-piece-rise{fill:#ffc78f;stroke:#182725;stroke-width:2;paint-order:stroke;font-family:'Space Grotesk',sans-serif;font-size:19px;font-weight:700}
+.builder-hit{fill:none;stroke:transparent;stroke-width:70;cursor:grab}
+.builder-hit:active{cursor:grabbing}
+.builder-socket{pointer-events:none}
+.builder-socket circle:first-of-type{fill:#1c3030;stroke:#b8e788;stroke-width:4}
+.builder-socket circle:nth-of-type(2){fill:#c3ee8d}
+.builder-route-label{font-size:23px;paint-order:stroke;stroke:#102322;stroke-width:4;pointer-events:none}
+.builder-support{stroke-width:4;fill:#8ac8ec;pointer-events:none}
+.builder-crossing,.builder-crossing-label{pointer-events:none}
+.builder-placement-preview,.builder-move-preview{pointer-events:none}
+.builder-placement-preview .builder-piece,.builder-move-preview .builder-piece{opacity:.74;filter:drop-shadow(0 0 9px #d8f9bb)}
+.builder-placement-preview .builder-piece-bed,.builder-move-preview .builder-piece-bed{stroke:#688266}
+.builder-placement-preview.snapped .builder-piece-bed{stroke:#a8d884}
+.builder-ruler{pointer-events:none}
+.builder-ruler path{fill:none;stroke:#bcd8c2;stroke-width:2;vector-effect:non-scaling-stroke}
+.builder-ruler text{font-family:'Space Grotesk',sans-serif;font-weight:700;fill:#c5e7ca;paint-order:stroke;stroke:#142622;stroke-width:4}
+.builder-placement-hint{position:absolute;z-index:2;top:76px;left:20px;color:#e9eeea;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;letter-spacing:.04em;background:#1e3330e8;border:1px solid #88ad84;border-radius:7px;padding:9px 12px;pointer-events:none}
+.builder-table-footer{background:linear-gradient(transparent,#102020b8);padding:16px 4px 0}
+/* The toolbar: View on the left; Navigate, Tools and History on the right. Each button is an icon and a short label; as the canvas narrows (about 1280 px wide
+   with both sidebars open) the zoom labels go first, then all labels; the name and tooltip stay. */
+.builder-table{container:builder-table/inline-size}
+.builder-table-toolbar{align-items:flex-start}
+.builder-tool-groups{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:6px;min-width:0}
+.builder-tool-group{display:flex;flex:none;gap:2px;padding:3px;border:1px solid #2c3d39;border-radius:9px;background:#111b1deb;box-shadow:0 4px 12px #0006}
+.builder-tool{display:inline-flex;align-items:center;gap:4px;height:28px;padding:0 7px;border:1px solid transparent;border-radius:6px;background:none;color:#e9eeea;font-size:12px;font-weight:600;white-space:nowrap}
+.builder-tool .builder-icon{flex:none}
+.builder-tool:hover:not(:disabled){background:#22352f}
+.builder-tool[aria-pressed="true"]{border-color:#c3ee8d;background:#2d4839;color:#e9f5dc}
+.builder-tool-group.is-view .builder-tool[aria-pressed="true"]{border-color:#c3ee8d;background:#c3ee8d;color:#17231e}
+.builder .builder-tool:disabled{opacity:.38}
+@container builder-table (max-width:879px){.builder-tool.is-minor .builder-tool-label{display:none}}
+@container builder-table (max-width:769px){.builder-tool-label{display:none}}
+.builder-swipe-hint{display:none}
+@media(max-width:760px){.builder-plan{top:19%;height:73%}.builder-table-toolbar{top:8px}.builder-tool-groups{gap:4px}.builder-tool{height:26px;padding:0 5px}.builder-placement-hint{left:8px;top:90px;max-width:calc(100% - 16px)}.builder-table-footer{left:8px;right:8px}.builder-table-footer span:first-child{max-width:55%}}
+@media(max-width:760px){.builder-palette-hint{display:none}.builder-swipe-hint{display:inline}.builder-tile{touch-action:pan-x}}
+.builder-tile-preview{display:block;width:100%;height:38px;margin-bottom:2px;flex:none;overflow:visible;filter:drop-shadow(0 2px 5px #0b1719)}
+.builder-tile-preview .builder-piece-spine{display:none}
+.builder-tile-preview .builder-piece-bed{stroke:#38574e}
+.builder-tile-preview .builder-piece.is-printed .builder-piece-bed{stroke:#69513d}
+.builder-tile-preview .builder-piece-tie{stroke:#7c9d87}
+.builder-tile-preview .builder-piece.is-printed .builder-piece-tie{stroke:#c18c63}
+.builder-tile-preview .builder-piece-rail{stroke:#e0f3ce}
+.builder-tile-preview .builder-piece.is-printed .builder-piece-rail{stroke:#ffe4b9}
+.builder-tile-preview .builder-piece.is-fast .builder-piece-rail{stroke:#fff1bf}
+.builder-tile-preview .builder-piece-deck{stroke:#bd9571}
+.builder-tile-grade{fill:none;stroke:#8ac8ec;stroke-width:3;stroke-linecap:round}
+.builder-tile-girder{fill:none;stroke:#bd9571;stroke-width:5;stroke-linecap:round}
+.builder{--builder-left:240px;--builder-right:296px;grid-template-columns:var(--builder-left) minmax(0,1fr) var(--builder-right)}
+.builder.is-palette-collapsed{--builder-left:52px}
+.builder.is-summary-collapsed{--builder-right:52px}
+.builder-palette-content,.builder-summary-content{display:flex;flex-direction:column;flex:1;min-height:0}
+.builder-palette-content[hidden],.builder-summary-content[hidden]{display:none}
+.builder-aside-heading{gap:5px}
+.builder-aside-heading .builder-collapse{flex:none;margin-left:auto;display:grid;place-items:center;width:30px;height:30px;padding:0;border:1px solid #415650;border-radius:7px;background:#20332f;color:#c3ee8d;font-size:23px;line-height:1}
+.builder-aside-heading .builder-collapse:hover{background:#355047}
+.builder-palette.is-collapsed,.builder-summary.is-collapsed{padding:15px 9px}
+.builder .is-collapsed .builder-aside-heading{flex-direction:column-reverse;justify-content:flex-end;gap:18px}
+.builder .is-collapsed .builder-aside-heading .builder-collapse{margin-left:0}
+.builder .is-collapsed .builder-aside-label{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font-size:11px;letter-spacing:.15em}
+.builder .is-collapsed .builder-palette-hint,.builder .is-collapsed .builder-swipe-hint{display:none}
+@media(max-width:1050px){.builder{--builder-left:185px;--builder-right:225px}.builder-palette-hint{display:none}}
+@media(max-width:760px){.builder-palette.is-collapsed,.builder-summary.is-collapsed{padding:8px 14px}.builder .is-collapsed .builder-aside-heading{flex-direction:row;justify-content:space-between;gap:8px}.builder .is-collapsed .builder-aside-heading .builder-collapse{margin-left:auto}.builder .is-collapsed .builder-aside-label{writing-mode:horizontal-tb;transform:none;font-size:13px;letter-spacing:.08em}}
+@media(max-width:760px){.builder-table{flex:1}}
+.builder-path-state{fill:none;stroke-width:3;pointer-events:none;stroke-linecap:round}
+.builder-path-state.is-enabled{stroke:#73e3e8}
+.builder-path-state.is-disabled{stroke:#ffc18a;stroke-dasharray:7 6}
+.builder-port-label{font-size:15px;fill:#d7f9cd;paint-order:stroke;stroke:#102322;stroke-width:4}
+.builder-piece-panel.is-selected label{display:grid;gap:8px}
+.builder-piece-panel.is-selected input[type="range"]{width:100%;accent-color:#73e3e8}
+.builder-switch-state button,.builder-panel-section>label>button{padding:7px 9px;border:1px solid #527467;border-radius:5px;background:#213b33;color:#e9eeea}
+.builder-piece-source{display:grid;gap:6px}
+.builder-route-apply{border:0;background:none;padding:0;color:#c3ee8d;text-align:left;text-decoration:underline;font-size:11px}
+.builder-switch-state{display:flex;gap:6px;flex-wrap:wrap}
+.builder-switch-state button[aria-pressed="true"]{background:#73e3e8;color:#132022;font-weight:700}
+@media(min-width:761px){.builder-palette{height:calc(100vh - 64px);overflow:hidden}.builder-palette-groups{flex:1;min-height:0;overflow-y:auto;margin-top:8px;padding-right:2px}
+.builder-palette-group.is-folded .builder-tiles,.builder-palette-group.is-folded .builder-palette-group-note{display:none}}
+.builder-plan,.builder-tile-preview{transform:scaleY(-1)}
+.builder-plan text,.builder-tile-grade{transform-box:fill-box;transform-origin:center;transform:scaleY(-1)}
+.builder-summary-content>p{margin:6px 0 18px;color:#8ca19a;font-size:12px}
+.builder-snap-target{fill:none;stroke:#ffffff;stroke-width:6;pointer-events:none;filter:drop-shadow(0 0 8px #e8ffbc)}
+.builder-default{fill:#5f7771;font-size:.8em}
+@media(min-width:1051px) and (max-width:1399px){.builder{--builder-left:214px;--builder-right:248px}.builder-palette,.builder-summary{padding:14px 12px}}
+.builder-tally strong{white-space:nowrap}
+.builder-param select,.builder-param input[type="number"]{width:100%;border:1px solid #31403f;background:#1c292a;color:#e9eeea;border-radius:6px;padding:5px 6px;font:inherit}
+.builder-mechanism-body{fill:#2a3a36;stroke:#7d9a8c;stroke-width:2;vector-effect:non-scaling-stroke}
+.builder-community-footprint{fill:#6aa6c9;fill-opacity:.3;pointer-events:none}
+/* Which way a snapped ghost goes from the joint. */
+.builder-snap-arrow{fill:none;stroke:#b8e788;stroke-width:7;stroke-linecap:round;opacity:.95;pointer-events:none}
+/* Insert preview: the run it replaces, and any gap it opens. */
+.builder-insert-removed{fill:none;stroke:#ff8f75;stroke-width:76;stroke-linecap:round;opacity:.3;pointer-events:none}
+.builder-insert-gap{pointer-events:none}
+.builder-insert-gap line{stroke:#ffb4a2;stroke-width:5;stroke-dasharray:12 9}
+.builder-insert-gap circle{fill:#ff8f7533;stroke:#ffb4a2;stroke-width:4}
+.builder-insert-gap text{fill:#ffd2c6;font:700 26px 'Space Grotesk',sans-serif;paint-order:stroke;stroke:#102020;stroke-width:6px}
+.builder-insert-notice{position:absolute;z-index:3;top:76px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid #b7735f;border-radius:8px;background:#2a1f1ced;color:#ffe3da;font-size:12px}
+.builder-insert-notice button{padding:5px 9px;border:1px solid #7b5246;border-radius:6px;background:#3a2925;color:#ffe3da}
+/* The other ways a piece can go at the locked joint: faint, thin, named on hover. */
+.builder-variant-outline{fill:#d9f2c40d;stroke:#d9f2c4;stroke-width:1.4;stroke-opacity:.5;stroke-dasharray:7 5;vector-effect:non-scaling-stroke;pointer-events:visiblePainted}
+.builder-variant-outline:hover{fill:#d9f2c426;stroke-opacity:.9}
+/* A kit ghost's pieces past a wall: the room ends there. */
+.builder-placement-preview .is-outside-room .builder-piece{filter:drop-shadow(0 0 9px #ff7a6b)}
+.builder-placement-preview .is-outside-room .builder-piece-bed{stroke:#a3443c}
+.builder-placement-preview .is-outside-room .builder-piece-solid{fill:#a3443c}
+.builder-placement-preview .is-outside-room .builder-piece-rail{stroke:#ffb0a6}
+.builder-climb-fit.is-fits{color:#b8e788}
+.builder-climb-fit.is-short{color:#f0b35a}
+/* Track height: raised track tints warmer and brighter, up to the legend's top; marks say the height at ends and slopes. */
+.builder-height-tint{pointer-events:none;mix-blend-mode:screen}
+.builder-height-tint line{stroke-linecap:butt}
+.builder-height-mark{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;fill:#ffd79a;paint-order:stroke;stroke:#102322;stroke-width:4;pointer-events:none}
+.builder-height-legend{position:absolute;z-index:2;right:64px;bottom:48px;display:flex;align-items:center;gap:6px;padding:5px 9px;border:1px solid #40594b;border-radius:7px;background:#111b1de8;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#e9eeea;pointer-events:none}
+.builder-height-legend i{display:block;width:72px;height:8px;border-radius:4px;background:linear-gradient(90deg,#38574e,hsl(48 95% 70%) 12%,hsl(18 95% 58%))}
+/* What going into the track does, beside the ghost: what it replaces (nothing moves), or what moves and the gap it opens. */
+.builder-insert-callout{fill:#e9f6dc;font-family:'Space Grotesk',sans-serif;font-weight:700;paint-order:stroke;stroke:#102020;stroke-width:5px;stroke-linejoin:round;pointer-events:none}
+.builder-insert-callout.is-shift{fill:#ffd2c6}
+/* Touch screens: canvas tools and the side panels' toggles big enough to tap. */
+@media(pointer:coarse){.builder-tool{height:34px;min-width:34px;justify-content:center}.builder-aside-heading .builder-collapse{width:36px;height:36px}}
+/* Touch-only screens have no keys to press: the keyboard hints would only lie over the table. */
+@media(hover:none) and (pointer:coarse){.builder-table-footer span:first-child,.placement-tip{display:none}}

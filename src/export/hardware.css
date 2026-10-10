@@ -1,0 +1,28 @@
+.export-hardware{display:grid;gap:12px;margin-top:20px;padding:18px;border:1px solid #354440;border-radius:12px;background:#1b2729;transition:opacity .15s}
+.export-hardware.is-pending,.hardware-also.is-pending{opacity:.6}
+.export-hardware-title{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.export-hardware-title h3{margin:0;font:700 16px 'Space Grotesk',sans-serif}
+.export-hardware-actions{display:flex;gap:8px}
+.export-hardware-actions button{border:1px solid #354440;border-radius:8px;background:transparent;color:#dce5dc;padding:7px 11px;font:600 12px 'DM Sans',sans-serif;cursor:pointer;white-space:nowrap}
+.export-hardware-actions button:first-child{background:#c3ee8d;border-color:#c3ee8d;color:#17231e}
+.export-hardware-actions button:hover{filter:brightness(1.08)}
+.export-hardware-warning{margin:0;padding:10px 12px;border:1px solid #665b3e;border-radius:8px;background:#24271f;color:#e7c786;font-size:12px;line-height:1.5}
+.export-hardware-quiet{margin:0;color:#8ca19a;font-size:12px}
+.export-hardware-group h4{display:flex;justify-content:space-between;gap:10px;margin:0 0 6px;padding-bottom:5px;border-bottom:1px solid #2b3a38;font:700 12px 'Space Grotesk',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#c0d0c4}
+.export-hardware-group h4 span{color:#8ca19a;font-family:'DM Sans',sans-serif;letter-spacing:0}
+.export-hardware-group ul{display:grid;gap:2px;list-style:none;margin:0;padding:0;font-size:13px;color:#dce5dc}
+.export-hardware-group li{padding:3px 0;line-height:1.45}
+.export-hardware-group summary{cursor:pointer;list-style-position:outside;margin-left:14px}
+.export-hardware-group summary::marker{color:#54736b}
+.export-hardware-group strong{color:#c3ee8d;font-weight:700}
+.export-hardware-group details small{display:block;margin:3px 0 4px 14px;color:#8ca19a;font-size:12px}
+.export-hardware-group.is-once li small{color:#8ca19a;font-size:12px}
+.export-hardware-group.is-once strong{color:#8ac8ec}
+.export-hardware-notes{margin:0;padding-left:16px;color:#8ca19a;font-size:11px;line-height:1.5}
+
+.hardware-also{display:grid;gap:4px;padding-top:8px;border-top:1px solid #26332f}
+.hardware-also-label{color:#8ca19a;font:700 10px 'Space Grotesk',sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.hardware-also ul{display:grid;gap:2px;list-style:none;margin:0;padding:0;font-size:11px;line-height:1.45;color:#dce5dc}
+.hardware-also li.is-once{color:#8ac8ec}
+.hardware-also p.hardware-also-warning{margin:0;color:#e7c786;font-size:11px;line-height:1.45}
+.hardware-also-quiet{color:#8ca19a;font-size:11px}

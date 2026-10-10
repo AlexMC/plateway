@@ -1,0 +1,17 @@
+*
+!cad
+!docs
+!src
+!public
+!site
+!index.html
+!vite.config.ts
+!tsconfig.json
+!package.json
+!package-lock.json
+!pyproject.toml
+!uv.lock
+site/tools
+**/node_modules
+**/__pycache__
+**/.pytest_cache

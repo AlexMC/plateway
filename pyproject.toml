@@ -1,0 +1,25 @@
+[project]
+name = "train-layout-workshop-cad"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "cadquery>=2.4,<3",
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.30,<1",
+  "trimesh>=4,<5",
+  "manifold3d>=3.5,<4",
+  "matplotlib>=3.9,<4",
+  "pillow>=10",
+  "argon2-cffi>=25.1,<26",
+  "boto3>=1.35,<2",
+  "cryptography>=44,<47",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<9", "httpx>=0.27,<1", "pypdf>=5,<7"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "track-plan-v1",
+  "title": "Track plan v1",
+  "description": "A layout as tracks of steps; docs/track-plan-language.md is the reference. parsePlan (src/plan/types.ts) is the authority: it also checks family params, states, references and labels.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "tracks"],
+  "properties": {
+    "version": { "const": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "description": "One plain line about the layout (optional)." },
+    "prefer": { "$ref": "#/$defs/source" },
+    "furniture": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kallax"],
+        "properties": {
+          "id": { "$ref": "#/$defs/label" },
+          "kallax": {
+            "type": "object",
+            "description": "IKEA KALLAX 5x5 (1820 x 390 mm) centred at (x, y); front faces -y at quarterTurns 0.",
+            "additionalProperties": false,
+            "required": ["x", "y"],
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" },
+              "quarterTurns": { "enum": [0, 1, 2, 3] }
+            }
+          }
+        }
+      }
+    },
+    "tracks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/track" } }
+  },
+  "$defs": {
+    "source": { "enum": ["owned", "printed", "fast"] },
+    "label": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_-]*$" },
+    "ref": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_-]*\\.[A-Za-z0-9_-]+$", "description": "<label>.<port>, <track>.start or <track>.end" },
+    "radius": {
+      "description": "\"R<studs>\" (1 stud = 8 mm) or millimetres",
+      "anyOf": [{ "type": "string", "pattern": "^[Rr][0-9]+(\\.[0-9]+)?$" }, { "type": "number" }]
+    },
+    "turn": { "enum": ["left", "right"] },
+    "params": { "type": "object", "additionalProperties": { "type": "number" } },
+    "track": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "start", "steps"],
+      "properties": {
+        "id": { "$ref": "#/$defs/label" },
+        "start": { "$ref": "#/$defs/start" },
+        "steps": { "type": "array", "items": { "$ref": "#/$defs/step" } }
+      }
+    },
+    "start": {
+      "oneOf": [
+        {
+          "type": "object",
+          "description": "A free pose: mm, heading degrees (0 = +x, 90 = +y), z above the table.",
+          "additionalProperties": false,
+          "required": ["x", "y"],
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" },
+            "heading": { "type": "number", "minimum": -360, "maximum": 360 },
+            "z": { "type": "number", "minimum": -400, "maximum": 2000 }
+          }
+        },
+        {
+          "type": "object",
+          "description": "Continue out of an open port of an earlier piece or track.",
+          "additionalProperties": false,
+          "required": ["from"],
+          "properties": { "from": { "$ref": "#/$defs/ref" } }
+        },
+        {
+          "type": "object",
+          "description": "The floor centre of a KALLAX cubby opening, heading into the cubby; [row, col] from the bottom-left as seen from the front.",
+          "additionalProperties": false,
+          "required": ["kallax", "cubby"],
+          "properties": {
+            "kallax": { "$ref": "#/$defs/label" },
+            "cubby": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "integer", "minimum": 1, "maximum": 5 } },
+            "side": { "enum": ["front", "back"] }
+          }
+        }
+      ]
+    },
+    "step": {
+      "description": "Exactly one action key plus that action's options and an optional source.",
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false, "required": ["straight"],
+          "properties": {
+            "straight": { "type": "number", "minimum": 24, "maximum": 2000, "description": "mm; 128 is the owned straight" },
+            "count": { "type": "integer", "minimum": 1, "maximum": 100 },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["curve", "turn", "angle"],
+          "properties": {
+            "curve": { "$ref": "#/$defs/radius", "description": "R24..R184; R40 22.5-degree pieces are the owned curve" },
+            "turn": { "$ref": "#/$defs/turn" },
+            "angle": { "type": "number", "minimum": 0.5, "maximum": 1440, "description": "degrees" },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["sbend"],
+          "properties": {
+            "sbend": {
+              "type": "object", "additionalProperties": false, "required": ["offset", "turn"],
+              "anyOf": [{ "required": ["length"] }, { "required": ["radius"] }],
+              "description": "Sizes in studs.",
+              "properties": {
+                "offset": { "type": "number", "minimum": 1, "maximum": 64 },
+                "length": { "type": "number", "minimum": 8, "maximum": 250 },
+                "middle": { "type": "number", "minimum": 0, "maximum": 125 },
+                "radius": { "$ref": "#/$defs/radius" },
+                "turn": { "$ref": "#/$defs/turn" }
+              }
+            },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["turnout"],
+          "properties": {
+            "turnout": {
+              "anyOf": [
+                { "enum": ["left", "right", "wye", "three-way"] },
+                {
+                  "type": "object", "additionalProperties": false, "required": ["family"],
+                  "properties": { "family": { "type": "string" }, "params": { "$ref": "#/$defs/params" } }
+                }
+              ]
+            },
+            "as": { "$ref": "#/$defs/label" },
+            "set": { "type": "string" },
+            "enter": { "type": "string" },
+            "follow": { "type": "string" },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["crossing"],
+          "properties": {
+            "crossing": {
+              "anyOf": [
+                { "const": "90" },
+                {
+                  "type": "object", "additionalProperties": false, "required": ["family"],
+                  "properties": { "family": { "type": "string" }, "params": { "$ref": "#/$defs/params" } }
+                }
+              ]
+            },
+            "as": { "$ref": "#/$defs/label" },
+            "set": { "type": "string" },
+            "enter": { "type": "string" },
+            "follow": { "type": "string" },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["ramp"],
+          "properties": {
+            "ramp": {
+              "type": "object", "additionalProperties": false, "required": ["rise"],
+              "properties": {
+                "rise": { "type": "number", "minimum": -1000, "maximum": 1000, "description": "mm, negative descends" },
+                "grade": { "type": "number", "minimum": 0.5, "maximum": 5 }
+              }
+            },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["raise"],
+          "properties": {
+            "raise": {
+              "type": "object", "additionalProperties": false, "required": ["to"],
+              "properties": {
+                "to": { "type": "number", "minimum": -400, "maximum": 2000, "description": "mm above the table" },
+                "grade": { "type": "number", "minimum": 0.5, "maximum": 5 }
+              }
+            },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["helix"],
+          "properties": {
+            "helix": {
+              "type": "object", "additionalProperties": false, "required": ["turns"],
+              "properties": {
+                "turns": { "type": "number", "minimum": 1, "maximum": 10, "multipleOf": 0.25 },
+                "radius": { "$ref": "#/$defs/radius" },
+                "dir": { "$ref": "#/$defs/turn" },
+                "climb": { "enum": ["up", "down"] },
+                "rise": { "type": "number", "minimum": 50, "maximum": 400, "description": "mm per turn" },
+                "columns": { "enum": [0, 4, 8, 16] }
+              }
+            },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["piece"],
+          "properties": {
+            "piece": { "type": "string", "description": "A registered family id" },
+            "params": { "$ref": "#/$defs/params" },
+            "state": { "type": "string" },
+            "as": { "$ref": "#/$defs/label" },
+            "enter": { "type": "string" },
+            "follow": { "type": "string" },
+            "sweep": { "type": "number", "minimum": -90, "maximum": 90 },
+            "rise": { "type": "number", "minimum": -1000, "maximum": 1000 },
+            "bend": { "type": "number", "minimum": -90, "maximum": 90 },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["buffer"],
+          "properties": {
+            "buffer": { "enum": [true, 32, 64] },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false, "required": ["close"],
+          "properties": {
+            "close": { "$ref": "#/$defs/ref" },
+            "minRadius": { "$ref": "#/$defs/radius" },
+            "source": { "$ref": "#/$defs/source" }
+          }
+        }
+      ]
+    }
+  }
+}

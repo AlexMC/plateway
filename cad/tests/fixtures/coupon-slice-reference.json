@@ -1,0 +1,7 @@
+{
+ "bambuStudio": "02.08.03.66",
+ "printer": {"name": "X1 Carbon", "material": "Bambu PLA Basic", "profile": "0.20mm Standard @BBL X1C",
+             "nozzleMm": 0.4, "orientation": "flat", "envelope": {"x": 256, "y": 256, "z": 250}},
+ "totalSeconds": 1239,
+ "filamentGrams": 5.56
+}

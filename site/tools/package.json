@@ -1,0 +1,14 @@
+{
+  "name": "plateway-site-tools",
+  "private": true,
+  "type": "module",
+  "description": "Builds the landing site's 3D assets: build-hero.mjs (hero model), build-poster.mjs (poster, OG image) and build-vendor.mjs (the shared three.js bundle).",
+  "devDependencies": {
+    "@gltf-transform/core": "^4.2.0",
+    "@gltf-transform/extensions": "^4.2.0",
+    "@gltf-transform/functions": "^4.2.0",
+    "meshoptimizer": "^0.25.0",
+    "esbuild": "^0.25.0",
+    "puppeteer-core": "^23.0.0"
+  }
+}

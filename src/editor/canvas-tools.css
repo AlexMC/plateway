@@ -1,0 +1,18 @@
+.builder-zoom-cluster{position:absolute;z-index:3;right:16px;bottom:44px;display:flex;flex-direction:column;border:1px solid #40594b;border-radius:9px;background:#111b1de8;box-shadow:0 6px 18px #0007;overflow:hidden}
+.builder-zoom-cluster button{width:36px;height:34px;border:0;border-bottom:1px solid #2c3d39;background:none;color:#e9eeea;font-size:19px;line-height:1}
+.builder-zoom-cluster button:last-child{border-bottom:0;font-size:16px}
+.builder-zoom-cluster button:hover{background:#2d4839}
+.builder-chip-owned{display:inline-block;margin-left:5px;padding:0 5px;border-radius:7px;background:#b8e788;color:#17231e;font-size:10px;font-weight:700;line-height:15px}
+.builder-chip-owned.is-empty{background:#4a3a32;color:#ffd4a5}
+.builder-owned-mark{color:#b8e788;font-weight:700}
+.builder-owned-mark.is-empty{color:#ffd4a5}
+.builder-turn{pointer-events:none}
+.builder-turn-guide{stroke:#c3ee8d;stroke-opacity:.28;stroke-width:2;stroke-dasharray:14 12;vector-effect:non-scaling-stroke}
+.builder-turn.is-parallel .builder-turn-guide,.builder-turn.is-closed .builder-turn-guide{stroke:#7fd8ff;stroke-opacity:.7;stroke-width:2.5}
+.builder-turn-guide.is-end{stroke-dasharray:4 10}
+.builder-turn-start{fill:none;stroke:#c3ee8d;stroke-opacity:.6;stroke-width:2;vector-effect:non-scaling-stroke}
+.builder-turn text{font-family:'Space Grotesk',sans-serif;font-weight:700;fill:#e9f5dc;paint-order:stroke;stroke:#102322;stroke-width:5;stroke-linejoin:round}
+.builder-turn .builder-turn-note{fill:#c5e7ca;font-weight:500}
+.builder-turn.is-parallel .builder-turn-note,.builder-turn.is-closed text{fill:#9fe3ff}
+.builder-turn-chip{position:absolute;z-index:3;left:50%;bottom:44px;transform:translateX(-50%);padding:7px 12px;border:1px solid #7fd8ff99;border-radius:8px;background:#102322e8;color:#e9f5dc;font:700 12px 'Space Grotesk',sans-serif;pointer-events:none;white-space:nowrap}
+@media(max-width:760px){.builder-zoom-cluster{right:8px;bottom:58px}.builder-turn-chip{bottom:58px;max-width:calc(100% - 140px);white-space:normal}}

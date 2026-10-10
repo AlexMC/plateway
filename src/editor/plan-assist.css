@@ -1,0 +1,43 @@
+.plan-assist{position:absolute;z-index:4;top:76px;left:20px;width:340px;max-height:calc(100% - 130px);overflow:auto;display:grid;gap:9px;padding:12px 14px;border:1px solid #9fd8c8;border-radius:8px;background:#1e3330f2;color:#e9eeea;font-size:12px;box-shadow:0 6px 20px #0008}
+.plan-assist p{margin:0}
+.plan-assist-heading{display:flex;align-items:center;justify-content:space-between}
+.plan-assist-heading strong{font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:.06em}
+.plan-assist-heading button{border:0;background:none;color:#e9eeea;font-size:18px;line-height:1;padding:0 2px}
+.plan-assist textarea,.plan-assist-refine input,.plan-assist-key-form input[type=password]{width:100%;font:inherit;background:#132022;color:#e9eeea;border:1px solid #4c6b62;border-radius:5px;padding:7px 8px;resize:vertical}
+.plan-assist textarea:focus-visible,.plan-assist-refine input:focus-visible,.plan-assist-key-form input[type=password]:focus-visible{outline:2px solid #b8e788;outline-offset:1px}
+.plan-assist-mode{display:flex;gap:14px}
+.plan-assist-mode label{display:flex;align-items:center;gap:5px}
+.plan-assist-actions{display:flex;gap:6px}
+.plan-assist-actions button,.plan-assist-refine button{flex:1;padding:7px 10px;border-radius:6px;border:1px solid #4c6b62;background:#1a2b2c;color:#e9eeea}
+.plan-assist-actions .plan-assist-primary{background:#9fd8c8;border-color:#9fd8c8;color:#1b2422;font-weight:700}
+.plan-assist-refine{display:flex;gap:6px}
+.plan-assist-refine input{flex:1}
+.plan-assist-refine button{flex:none}
+.plan-assist-error{color:#ffd2c4}
+.plan-assist-key-form{display:grid;gap:7px;padding:9px 10px;border:1px solid #4c6b62;border-radius:6px;background:#152625}
+.plan-assist-key-form p{line-height:1.45}
+.plan-assist-key-form a{color:#9fd8c8}
+.plan-assist-remember{display:flex;align-items:center;gap:5px}
+.plan-assist-key{display:flex;align-items:center;gap:10px}
+.plan-assist-key span{flex:1;white-space:nowrap;opacity:.85}
+.plan-assist-key button{border:0;background:none;padding:0;color:#9fd8c8;font:inherit;text-decoration:underline;white-space:nowrap}
+.plan-assist-key button:disabled{opacity:.5}
+.plan-assist-cost{opacity:.75;line-height:1.4}
+.plan-assist-progress{display:flex;align-items:center;gap:8px;color:#d8f0e8}
+.plan-assist-progress i{width:10px;height:10px;border-radius:50%;border:2px solid #9fd8c8;border-right-color:transparent;animation:plan-assist-spin .8s linear infinite}
+@keyframes plan-assist-spin{to{transform:rotate(360deg)}}
+.plan-assist-notes{padding:8px 10px;border-left:3px solid #9fd8c8;background:#152625;line-height:1.45}
+.plan-assist-report{display:grid;gap:5px}
+.plan-assist-report small{opacity:.75;font-weight:400}
+.plan-assist-ok{font-weight:700;color:#c3ee8d}
+.plan-assist-bad{font-weight:700;color:#ffc18a}
+.plan-assist-problems,.plan-assist-trains{margin:0;padding-left:16px;display:grid;gap:3px}
+.plan-assist-problems li{color:#ffd2c4}
+.plan-assist-trains .is-bad{color:#ffd2c4}
+.plan-assist-json summary{cursor:pointer;opacity:.8}
+.plan-assist-json pre{max-height:220px;overflow:auto;margin:6px 0 0;padding:8px;background:#0f1a1b;border-radius:5px;font-size:11px}
+.plan-assist-preview .builder-piece{opacity:.7;filter:drop-shadow(0 0 9px #9fd8c8)}
+.builder-plan .is-replaced{opacity:.18}
+@media(max-width:760px){.plan-assist{left:8px;top:90px;width:calc(100% - 16px)}}
+/* Touch screens: the close button big enough to tap. */
+@media(pointer:coarse){.plan-assist-heading button{min-width:36px;min-height:36px}}

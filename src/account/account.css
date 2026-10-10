@@ -1,0 +1,48 @@
+/* Account dialogs and the verify banner: the Save/Open dialog language from editor/styles.css. */
+.account-dialog { width: min(460px, 100%); }
+.account-fields { display: grid; gap: 14px; }
+.account-text { color: #c8d6cc; font-size: 14px; line-height: 1.5; margin: 0 0 20px; }
+.account-text strong { color: #e5eee7; }
+.account-reason { margin: -12px 0 18px; color: #c4df9c; }
+.account-error { color: #ffb4a6; font-size: 13px; margin: 10px 0 0; }
+.account-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin: 14px 0 20px; }
+.account-link { background: none; border: 0; padding: 0; color: #8ac8ec; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
+.account-link:hover { color: #c3ee8d; }
+.save-actions .account-link { margin-right: auto; align-self: center; }
+.account-section { border-top: 1px solid #31403f; padding: 16px 0 4px; }
+.account-inline { display: flex; align-items: flex-end; gap: 9px; }
+.account-inline .save-name { flex: 1; min-width: 0; }
+.account-inline .quiet-button { padding-block: 12px; }
+.account-actions { display: flex; flex-wrap: wrap; gap: 9px; padding-bottom: 16px; }
+.account-actions a.quiet-button { text-decoration: none; }
+.account-danger h3 { font: 700 16px 'Space Grotesk', sans-serif; margin: 0 0 4px; color: #ffb4a6; }
+.account-danger .save-actions { margin-top: 18px; }
+.account-danger-link { color: #d79a8c; }
+.account-delete { padding: 10px 13px; border-radius: 8px; font-size: 13px; font-weight: 700; border: 1px solid #b0614f; background: #3a2623; color: #ffb4a6; }
+.account-delete:hover:not(:disabled) { background: #4a2c27; }
+.account-button { max-width: 160px; overflow: hidden; text-overflow: ellipsis; }
+.account-legal { color: #8ca19a; font-size: 12px; margin: -12px 0 18px; }
+.account-legal.account-section { margin: 4px 0 0; padding-bottom: 0; }
+.account-legal a { color: #8ac8ec; text-underline-offset: 3px; }
+.account-legal a:hover { color: #c3ee8d; }
+
+.verify-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 7px 24px;
+  border-bottom: 1px solid #5a4a3a;
+  background: #2a2419;
+  color: #e7c786;
+  font-size: 13px;
+}
+.verify-banner strong { color: #efd7a4; }
+.verify-banner > span:first-child { flex: 1; min-width: 0; }
+.verify-note { color: #cde9b5; }
+.verify-banner .quiet-button { padding: 6px 11px; border-color: #7b6646; color: #efd7a4; }
+.verify-banner .quiet-button:hover { border-color: #e7c786; }
+@media (max-width: 560px) {
+  .verify-banner { padding-inline: 12px; font-size: 12px; }
+  .account-button { max-width: 90px; }
+}

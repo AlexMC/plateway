@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "Figure eight through a 90° crossing",
+  "description": "A figure eight that crosses itself on a 90° crossing.",
+  "tracks": [
+    { "id": "main",
+      "start": { "x": 900, "y": 1000, "heading": 0 },
+      "steps": [
+        { "crossing": "90", "as": "X" },
+        { "straight": 128, "count": 2 },
+        { "curve": "R40", "turn": "left", "angle": 270 },
+        { "straight": 128, "count": 2 },
+        { "close": "X.north" }
+      ] },
+    { "id": "lower",
+      "start": { "from": "X.south" },
+      "steps": [
+        { "straight": 128, "count": 2 },
+        { "curve": "R40", "turn": "right", "angle": 270 },
+        { "close": "main.start" }
+      ] }
+  ]
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+  DRAFT for Alex's review. This is a careful draft, not legal advice: have it checked before launch.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Plateway</title>
+<meta name="description" content="What Plateway stores about you, why, who processes it, and how to export or delete it.">
+<meta name="theme-color" content="#10191b">
+<link rel="icon" href="../favicon.svg?v=2" type="image/svg+xml">
+<link rel="preload" href="../fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="../"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></a>
+    <a class="btn btn-ghost btn-small legal-back" href="../">Back to Plateway</a>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <article class="wrap narrow">
+    <h1>Privacy policy</h1>
+    <p class="legal-updated">Last updated 10 October 2026</p>
+
+    <section class="legal-summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">In short</h2>
+      <ul>
+        <li>You can design, check and test drive without an account. That work stays in your browser.</li>
+        <li>With an account we store your email, display name, projects and print results, only to run Plateway for you.</li>
+        <li>Describe track sends your text and your own Anthropic key from your browser straight to Anthropic. Plateway never sees the key.</li>
+        <li>Shared layouts and approved contributions are public under your display name. <strong>Once an upload is approved it stays public on GitHub permanently</strong>, even after you delete your account.</li>
+        <li>No ads and no tracking. We count page views with Cloudflare Web Analytics, which sets no cookies and builds no profile of you. The app also counts, per day, how often its features are used and which errors browsers hit, with nothing that identifies you. You can export or delete your data at any time from your account.</li>
+      </ul>
+    </section>
+
+    <h2 id="who">Who is responsible</h2>
+    <p>Plateway is run by <strong>Alex Carvalho</strong>, an individual based in Portugal (European Union), who is the data controller for the personal data described here. Contact: <a href="mailto:plateway@alexcarvalho.me">plateway@alexcarvalho.me</a>.</p>
+
+    <h2 id="visitors">Using Plateway without an account</h2>
+    <p>Designing, Checks, Test drive and browsing the gallery run in your browser. Your current layout, your setup choices and a few interface preferences are kept in your browser's local storage so they survive a reload; they are not sent to us. A few features ask our server to compute something, such as the shopping list for a layout. We use what you send only to answer that request and do not keep it.</p>
+    <p>Like every web server, ours sees your IP address and browser details when you load a page. Request logs are used only to keep the service running and secure.</p>
+
+    <h2 id="data">What we store when you have an account, and why</h2>
+    <div class="legal-table">
+      <table>
+        <thead><tr><th scope="col">Data</th><th scope="col">Why</th><th scope="col">Lawful basis</th><th scope="col">How long</th></tr></thead>
+        <tbody>
+          <tr><td>Email address, display name, a hash of your password (argon2id), whether your email is verified, when you joined</td><td>To run your account, sign you in, and send the emails the account needs</td><td>Contract</td><td>Until you delete your account. An account whose email is not verified within 7 days is deleted with its projects.</td></tr>
+          <tr><td>Session (a cookie named <code>__Host-plateway</code>; we store only a hash of its token)</td><td>To keep you signed in</td><td>Contract</td><td>Ends when you sign out, after 7 days without use, or after 30 days at most</td></tr>
+          <tr><td>Email links (verify, reset password, change email; we store only a hash)</td><td>To confirm the request is yours</td><td>Contract</td><td>Until used or expired: 24 hours at most</td></tr>
+          <tr><td>Projects and every saved revision</td><td>To save your work and open it on any device</td><td>Contract</td><td>Until you delete them or your account</td></tr>
+          <tr><td>Connector-fit calibration results, prepare jobs and their receipts</td><td>To prepare plates, show progress and reuse your fit</td><td>Contract</td><td>Until you delete your account</td></tr>
+          <tr><td>Prepared files: plates, STLs, G-code and the PDF guide</td><td>To let you download what you prepared</td><td>Contract</td><td>7 days, then deleted; you can prepare again</td></tr>
+          <tr><td>Downloads of your prepared files: which of your packages, whether the whole ZIP or one file, and when</td><td>To know whether prepared plates get downloaded</td><td>Legitimate interest</td><td>Until you delete your account</td></tr>
+          <tr><td>Shared gallery layouts: a copy without your owned-track inventory, test-drive notes, fit calibration, printer, material and print settings, with your display name</td><td>To publish what you chose to share, credited to you</td><td>Contract</td><td>Until you remove it or delete your account. Remixes others made keep your display name in their credits.</td></tr>
+          <tr><td>Contributions (pieces, train models, furniture): the files, their details, your display name, your rights confirmation and the review outcome</td><td>To review and publish what you contribute</td><td>Contract</td><td>See <a href="#public">What becomes public permanently</a></td></tr>
+          <tr><td>Reports of shared layouts: the reason, your account if signed in, and your IP address</td><td>To moderate the gallery and stop abuse of the report button</td><td>Legitimate interest</td><td>Until the report is handled</td></tr>
+          <tr><td>Security logs: sign-in, sign-up and password-reset events with the IP address and account involved</td><td>To protect accounts from password guessing and abuse, and to investigate incidents</td><td>Legitimate interest (network and information security)</td><td>90 days, then deleted</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We do not ask for your real name, birthday, phone number or address. Choose any display name you like; it is what others see.</p>
+    <p>We send only emails your account needs: verification, password reset, email change and deletion confirmations. No newsletters or marketing.</p>
+
+    <h2 id="anthropic">Describe track and Anthropic</h2>
+    <p>Describe track uses <strong>your own Anthropic API key</strong>. Your browser sends your description, the layout it needs and your key <strong>directly to Anthropic</strong> (<code>api.anthropic.com</code>, United States). Nothing passes through Plateway's server, and we never see or store your key.</p>
+    <p>Your key stays in your browser for the current tab session, or on this device if you tick "remember". That use of Anthropic is between you and Anthropic under your own Anthropic account and its terms; see <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>. Don't put personal information in your description.</p>
+
+    <h2 id="processors">Who processes data for us</h2>
+    <p>These service providers process personal data on our behalf, under data-processing terms that bind them to our instructions:</p>
+    <ul>
+      <li><strong>Hetzner Online GmbH</strong> (Germany): the server that runs Plateway and holds its database, in Hetzner's Helsinki data centre (Finland, EU).</li>
+      <li><strong>Cloudflare, Inc.</strong> (United States, with EU data centres): the secure connection to Plateway, storage (R2) for database backups, prepared files and the public library files, sending the account emails, and page-view counts (Web Analytics).</li>
+      <li><strong>GitHub, Inc.</strong> (United States): hosts Plateway's public library repository, where approved contributions are published.</li>
+    </ul>
+    <p>Where a provider handles data outside the European Economic Area, the transfer relies on the EU–US Data Privacy Framework or the European Commission's Standard Contractual Clauses. We do not sell your data or share it with anyone else, except where the law requires it.</p>
+
+    <h2 id="analytics">Page-view counts</h2>
+    <p>To know whether people use Plateway, each page loads Cloudflare Web Analytics' script (<code>static.cloudflareinsights.com</code>), which reports the page address, the referring page, your browser and device type, the country derived from your IP address, and page load timings. It sets no cookies, uses no local storage and does not identify or follow you across sites; we only see totals. Our legal basis is our legitimate interest in knowing how much Plateway is used. A content blocker that blocks the script has no effect on how Plateway works. Separately, Plateway counts sign-ups, prepares and contributions from its own database, as totals only.</p>
+
+    <h2 id="usage">Usage counts and error reports</h2>
+    <p>The app tells Plateway's server which features a page load used, such as starting from an example, starting a test drive, opening Print or remixing a layout. Each feature counts once per page load. When something breaks in your browser, the app also sends the error message, where in Plateway's code it happened (a file and line, or a part of the interface) and the app version, at most five reports per page load. Neither carries a cookie or any identifier, and the server keeps only <strong>daily totals</strong>: how many page loads used each feature, and how often each error happened. Your IP address is not stored; it is held briefly in memory only to limit how many reports one address can send. Nothing links a count or a report to you. The totals are kept for 400 days. Our legal basis is our legitimate interest in knowing which parts of Plateway are used and fixing what breaks. With Do Not Track turned on in your browser, the app sends neither.</p>
+
+    <h2 id="feedback">Feedback</h2>
+    <p>The <strong>Feedback</strong> button in the app and the <strong>Send feedback</strong> page on this site send us your message, the email address you give if you want a reply (optional), the page or app view you sent it from and the app version. If you are signed in, it is also linked to your account. Your IP address is not stored; it is held briefly in memory only to limit how many messages one address can send. We store the feedback in Plateway's database and email it to Plateway's admins through Cloudflare (above), so we can read it, fix what it reports and reply if you asked. We use your email address only to reply to that feedback. Our legal basis is our legitimate interest in improving Plateway.</p>
+    <p>Feedback is deleted automatically <strong>12 months</strong> after you send it, or sooner if you ask us at the contact address above. The copy emailed to the admins is deleted by hand once we have dealt with it. Deleting your account does not delete your feedback: it stays until then, no longer linked to your account.</p>
+
+    <h2 id="public">What becomes public permanently</h2>
+    <p><strong>Shared layouts</strong> are public from the moment you publish them, under CC BY 4.0 and credited to your display name. Deleting your account removes them from the gallery. Remixes other people made keep the credit to your display name as it was.</p>
+    <p><strong>Pieces, train models and furniture</strong> you upload are not public at first. Alex looks at each upload in Plateway. A rejected upload never leaves Plateway.</p>
+    <p><strong>Once Alex approves an upload, it and your display name are published on GitHub</strong> as a pull request on Plateway's public library repository. From then on they are <strong>public on GitHub permanently, whether the pull request is merged or closed, and even after you delete your account</strong>: GitHub keeps every pull request and its files visible, and we cannot erase them. A merged item also stays in Plateway's library, credited to your display name as it was, as its CC BY licence allows. If an item has to come down for legal reasons, see the <a href="terms.html#takedown">takedown process</a>: we remove it from Plateway's library and from the repository's current files, but its history on GitHub may remain.</p>
+
+    <h2 id="storage">Cookies and storage on your device</h2>
+    <p>We set one cookie, <code>__Host-plateway</code>, only when you sign in. It is strictly necessary to keep you signed in. Your browser's local and session storage hold your current draft, interface preferences and, if you use Describe track, your Anthropic key. Signing out clears the draft and the key. There are no advertising or analytics cookies. The only third-party script is Cloudflare's cookieless page-view counter (above); our fonts are served by Plateway itself. That is why there is no cookie banner.</p>
+
+    <h2 id="rights">Your rights</h2>
+    <ul>
+      <li><strong>Access and portability:</strong> in the app, open your account and choose <strong>Export my data</strong> to download a ZIP of your account, projects with every revision, calibration results, receipts and contributions.</li>
+      <li><strong>Correction:</strong> change your display name or email from your account.</li>
+      <li><strong>Erasure:</strong> choose <strong>Delete account</strong> and confirm with your password. This deletes your account, projects, revisions, calibration results, receipts, download records, prepared files and shared gallery layouts, cancels your queued prepares and withdraws contributions that are not yet decided. What stays is described in <a href="#public">What becomes public permanently</a>, and security logs until they are deleted 90 days after the event. Backups of the database are kept for 30 days; deleted data leaves the backups within 30 days.</li>
+      <li><strong>Objection and restriction:</strong> you can object to processing based on legitimate interest, or ask us to restrict processing, by emailing us.</li>
+    </ul>
+    <p>For anything else, email <a href="mailto:plateway@alexcarvalho.me">plateway@alexcarvalho.me</a>. We reply within one month.</p>
+    <p>You can also complain to the Portuguese data-protection authority, the <strong>CNPD</strong> (Comissão Nacional de Proteção de Dados, <a href="https://www.cnpd.pt/">www.cnpd.pt</a>), or to the authority where you live.</p>
+
+    <h2 id="security">Security</h2>
+    <p>Passwords are stored only as argon2id hashes, and session and email-link tokens only as hashes. All traffic is encrypted (HTTPS). Backups are encrypted, and server access is limited to Alex. If a breach puts you at risk, we will tell you and the CNPD as the law requires.</p>
+
+    <h2 id="age">Age</h2>
+    <p>You must be at least 16 to create an account.</p>
+
+    <h2 id="changes">Changes</h2>
+    <p>If this policy changes in a way that matters, we will say so in the app and, for account holders, by email before the change applies. The date at the top shows the latest version.</p>
+    <p>See also the <a href="terms.html">terms of use</a>.</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="wordmark wordmark-small"><span class="mark" aria-hidden="true"><span></span><span></span></span><span>Plateway</span></p>
+      <ul class="footer-links">
+        <li><a href="../">Home</a></li>
+        <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="../feedback.html">Send feedback</a></li>
+        <li><a href="https://github.com/AlexMC/plateway">Source code (AGPL-3.0)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

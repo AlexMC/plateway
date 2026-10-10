@@ -1,0 +1,37 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - ca-certificates
+  - curl
+  - git
+  - unattended-upgrades
+  - fail2ban
+ssh_pwauth: false
+disable_root: true
+users:
+  - name: deploy
+    shell: /bin/bash
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIITTDlgNfGzXwL8OMHadZXlEt+ojQGNXI0AKQf02Mrma plateway-deploy
+write_files:
+  - path: /etc/ssh/sshd_config.d/10-plateway.conf
+    content: |
+      PermitRootLogin no
+      PasswordAuthentication no
+      KbdInteractiveAuthentication no
+  - path: /etc/docker/daemon.json
+    content: |
+      {"log-driver": "local", "log-opts": {"max-size": "20m", "max-file": "5"}}
+  - path: /etc/systemd/journald.conf.d/size.conf
+    content: |
+      [Journal]
+      SystemMaxUse=500M
+runcmd:
+  - curl -fsSL https://get.docker.com | sh
+  - usermod -aG docker deploy
+  - systemctl enable --now docker fail2ban
+  - systemctl restart systemd-journald
+  - systemctl restart ssh
+  - timedatectl set-timezone UTC
